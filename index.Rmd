@@ -24,7 +24,7 @@ To be written.
 
 ## Examples
 
-### Why is $0.\dot{9}=1$ true? {-}
+### Why is $0.99999...=1$ true? {-}
 
 Our intuition tells us that
 $$
