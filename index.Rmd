@@ -20,6 +20,60 @@ To be written.
 
 # Fun Algebra
 
+## Knowledge Base
+
+## Examples
+
+### Why is $0.\dot{9}=1$ true? {-}
+
+Our intuition tells us that
+$$
+0.\dot{9}\le 1.
+$$
+Here I will use **Algebra** to show that actually
+$$
+0.\dot{9}= 1.
+$$
+
+**Proof.** Let 
+$$
+x = 0.\dot{9}.
+$$
+Then,
+$$
+\begin{array}{ccl}
+10x &=& 10\times 0.\dot{9}\\
+&=& 10(0.9 + 0.09 + 0.009 + 0.0009 + \cdots)\\
+&=& 9 + 0.9 + 0.09 + 0.009 + \cdots\\
+&=& 9 + x,
+\end{array}
+$$
+from which it follows that
+$$
+9x = 9.
+$$
+So, $x=9/9=1.$ The proof is completed.
+
+**Exercises:**
+
+a. Convert $0.\dot{1}$ to a fraction.
+b. Covert $2.1\dot{2}\dot{3}$ to a fraction.
+
+### How much money can you save? {-}
+
+Like me, if you take a bus and go to the downtown, you probably will see see ads in front of a shop, saying "Buy one and get the second for half price!" Here, a natural qestion to ask is: How much is the saving?
+
+I guess you can solve the above question in a way. However, trust me, the best way to solve the above problem is usig **Algebra** as shown below.
+
+**Solution.** Let the price of the item is $p$. So,
+$$
+\hbox{the saving} = 2p - (p + 0.5p) = 0.5p.
+$$
+The percentage saving is
+$$
+\frac{0.5p}{2p}=0.25=25\%.
+$$
+
 # Beautiful Geomtry
 
 ## Plane Geometry

@@ -63,9 +63,15 @@
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="fun-algebra.html"><a href="fun-algebra.html"><i class="fa fa-check"></i><b>1</b> Fun Algebra</a></li>
+<li class="chapter" data-level="1" data-path="fun-algebra.html"><a href="fun-algebra.html"><i class="fa fa-check"></i><b>1</b> Fun Algebra</a><ul>
+<li class="chapter" data-level="1.1" data-path="fun-algebra.html"><a href="fun-algebra.html#knowledge-base"><i class="fa fa-check"></i><b>1.1</b> Knowledge Base</a></li>
+<li class="chapter" data-level="1.2" data-path="fun-algebra.html"><a href="fun-algebra.html#examples"><i class="fa fa-check"></i><b>1.2</b> Examples</a><ul>
+<li><a href="fun-algebra.html#why-is-0.dot91-true">Why is <span class="math inline">\(0.\dot{9}=1\)</span> true?</a></li>
+<li class="chapter" data-level="" data-path="fun-algebra.html"><a href="fun-algebra.html#how-much-money-can-you-save"><i class="fa fa-check"></i>How much money can you save?</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html"><i class="fa fa-check"></i><b>2</b> Beautiful Geomtry</a><ul>
-<li class="chapter" data-level="2.1" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#plan-geometry"><i class="fa fa-check"></i><b>2.1</b> Plan Geometry</a></li>
+<li class="chapter" data-level="2.1" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#plane-geometry"><i class="fa fa-check"></i><b>2.1</b> Plane Geometry</a></li>
 <li class="chapter" data-level="2.2" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#coordiante-geometry"><i class="fa fa-check"></i><b>2.2</b> Coordiante Geometry</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="tricky-trigonometrics.html"><a href="tricky-trigonometrics.html"><i class="fa fa-check"></i><b>3</b> Tricky Trigonometrics</a></li>
@@ -142,6 +148,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
