@@ -56,14 +56,14 @@ So, $x=9/9=1.$ The proof is completed.
 
 **Exercises:**
 
-a. Convert $0.\dot{1}$ to a fraction.
-b. Covert $2.1\dot{2}\dot{3}$ to a fraction.
+    (a) Convert $0.\dot{1}$ to a fraction.
+    (b) Covert $2.1\dot{2}\dot{3}$ to a fraction.
 
 ### How much money can you save? {-}
 
-Like me, if you take a bus and go to the downtown, you probably will see an ads in front of a shop, saying "Buy one and get the second for half price!" Here, a natural qestion to ask is: How much is the saving?
+Like me, if you take a bus and go to the downtown, you probably will see an ads in front of a shop, saying "Buy one and get the second for half price!" Here, a natural question to ask is: How much is the saving?
 
-I guess you can solve the above question in a way. However, trust me, the best way to solve the above problem is usig **Algebra** as shown below.
+I guess you can solve the above question in a way. However, trust me, the best way to solve the above problem is using **Algebra** as shown below.
 
 **Solution.** Let the price of the item is $p$. So,
 $$
@@ -78,6 +78,26 @@ $$
 
 ## Plane Geometry
 
+### Sum of inner angles of a triangle {-}
+
+We all know that the sum of the three inner angles of a triangle is equal to $180^0$, but why is this true. Below is a simple proof.
+
+**Proof.** Observing picture below, we have
+$$
+\theta_1 + \theta_2 + \theta_3 = 360^0,
+$$
+and
+$$
+(\theta_1 + \angle C) + (\theta_2 + \angle A) + (\theta_3 + \angle B) = 540^0.
+$$
+Thus, it follows from the above two equations that
+$$
+\angle A + \angle B + \angle C = 540^0 - 360^0=180^0.
+$$
+The proof is completed.
+
+![](figures/triangl.png)
+
 ## Coordiante Geometry
 
 # Tricky Trigonometrics
@@ -89,6 +109,45 @@ $$
 ## Interesting Number Series
 
 ## Serious Inequlities
+
+### Average is Between the Min and Max
+
+Let $x_1,\ x_2,\ \ldots,\ x_n$ be $n$ numbers. Let $w_1,\ w_2,\ \ldots,\ w_n$ be $n$ positive numbers such that $\sum_{i=1}^n w_i = 1$ (i.e. $w_i$ for $i=1, \ldots, n$ are the so-called weights, and a special case is $w_1=w_2=\ldots=w_n=1/n$). Let the minimum be
+$$
+m:=\hbox{min}\{x_1, x_2, \ldots, x_n\};
+$$
+let the maximum be
+$$
+M:=\hbox{max}\{x_1, x_2, \ldots, x_n\},
+$$
+The following are true.
+
+    (a) $m \le x_i \le M$, for $i=1, 2, \ldots, n.$
+    (b) $m\le \sum_{i=1}^n w_i x_i \le M.$
+    
+Statement (a) is obvious; now we show (b) is true.
+
+**Proof of (b).** Since
+$$
+m \le x_i, \ \hbox{for}\ i=1, 2, \ldots,  n,
+$$
+$$
+mw_i \le w_ix_i, \ \hbox{for}\ i=1, 2, \ldots,  n.
+$$
+Thus,
+$$
+m=\sum_{i=1}^n mw_i\le \sum_{i=1}^n w_ix_i.
+$$
+In the same manner, we can prove
+$$
+\sum_{i=1}^n w_ix_i \le M.
+$$
+
+**Exercise** (kind of challenging). Let $x_1, x_2, \ldots, x_n$ be $n$ arbitrary positive numbers; let $y_1, y_2, \ldots, y_n$ be another $n$ arbitrary positive numbers. Show that
+$$
+\hbox{min}\{x_1/y_1, x_2/y_2, \ldots, x_n/y_n\}\le \frac{\sum_{i=1}^n x_i}{\sum_{i=1}^n y_i} \le \hbox{max}\{x_1/y_1, x_2/y_2, \ldots, x_n/y_n\}.
+$$
+
 
 ## Hard Combinatorics
 

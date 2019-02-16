@@ -71,14 +71,18 @@
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html"><i class="fa fa-check"></i><b>2</b> Beautiful Geomtry</a><ul>
-<li class="chapter" data-level="2.1" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#plane-geometry"><i class="fa fa-check"></i><b>2.1</b> Plane Geometry</a></li>
+<li class="chapter" data-level="2.1" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#plane-geometry"><i class="fa fa-check"></i><b>2.1</b> Plane Geometry</a><ul>
+<li class="chapter" data-level="" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#sum-of-inner-angles-of-a-triangle"><i class="fa fa-check"></i>Sum of inner angles of a triangle</a></li>
+</ul></li>
 <li class="chapter" data-level="2.2" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#coordiante-geometry"><i class="fa fa-check"></i><b>2.2</b> Coordiante Geometry</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="tricky-trigonometrics.html"><a href="tricky-trigonometrics.html"><i class="fa fa-check"></i><b>3</b> Tricky Trigonometrics</a></li>
 <li class="chapter" data-level="4" data-path="complex-numbers.html"><a href="complex-numbers.html"><i class="fa fa-check"></i><b>4</b> Complex Numbers</a></li>
 <li class="chapter" data-level="5" data-path="other-stuff.html"><a href="other-stuff.html"><i class="fa fa-check"></i><b>5</b> Other Stuff</a><ul>
 <li class="chapter" data-level="5.1" data-path="other-stuff.html"><a href="other-stuff.html#interesting-number-series"><i class="fa fa-check"></i><b>5.1</b> Interesting Number Series</a></li>
-<li class="chapter" data-level="5.2" data-path="other-stuff.html"><a href="other-stuff.html#serious-inequlities"><i class="fa fa-check"></i><b>5.2</b> Serious Inequlities</a></li>
+<li class="chapter" data-level="5.2" data-path="other-stuff.html"><a href="other-stuff.html#serious-inequlities"><i class="fa fa-check"></i><b>5.2</b> Serious Inequlities</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="other-stuff.html"><a href="other-stuff.html#average-is-between-the-min-and-max"><i class="fa fa-check"></i><b>5.2.1</b> Average is Between the Min and Max</a></li>
+</ul></li>
 <li class="chapter" data-level="5.3" data-path="other-stuff.html"><a href="other-stuff.html#hard-combinatorics"><i class="fa fa-check"></i><b>5.3</b> Hard Combinatorics</a></li>
 </ul></li>
 </ul>
@@ -105,6 +109,29 @@
 </div>
 <div id="serious-inequlities" class="section level2">
 <h2><span class="header-section-number">5.2</span> Serious Inequlities</h2>
+<div id="average-is-between-the-min-and-max" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> Average is Between the Min and Max</h3>
+<p>Let <span class="math inline">\(x_1,\ x_2,\ \ldots,\ x_n\)</span> be <span class="math inline">\(n\)</span> numbers. Let <span class="math inline">\(w_1,\ w_2,\ \ldots,\ w_n\)</span> be <span class="math inline">\(n\)</span> positive numbers such that <span class="math inline">\(\sum_{i=1}^n w_i = 1\)</span> (i.e. <span class="math inline">\(w_i\)</span> for <span class="math inline">\(i=1, \ldots, n\)</span> are the so-called weights, and a special case is <span class="math inline">\(w_1=w_2=\ldots=w_n=1/n\)</span>). Let the minimum be <span class="math display">\[
+m:=\hbox{min}\{x_1, x_2, \ldots, x_n\};
+\]</span> let the maximum be <span class="math display">\[
+M:=\hbox{max}\{x_1, x_2, \ldots, x_n\},
+\]</span> The following are true.</p>
+<pre><code>(a) $m \le x_i \le M$, for $i=1, 2, \ldots, n.$
+(b) $m\le \sum_{i=1}^n w_i x_i \le M.$</code></pre>
+<p>Statement (a) is obvious; now we show (b) is true.</p>
+<p><strong>Proof of (b).</strong> Since <span class="math display">\[
+m \le x_i, \ \hbox{for}\ i=1, 2, \ldots,  n,
+\]</span> <span class="math display">\[
+mw_i \le w_ix_i, \ \hbox{for}\ i=1, 2, \ldots,  n.
+\]</span> Thus, <span class="math display">\[
+m=\sum_{i=1}^n mw_i\le \sum_{i=1}^n w_ix_i.
+\]</span> In the same manner, we can prove <span class="math display">\[
+\sum_{i=1}^n w_ix_i \le M.
+\]</span></p>
+<p><strong>Exercise</strong> (kind of challenging). Let <span class="math inline">\(x_1, x_2, \ldots, x_n\)</span> be <span class="math inline">\(n\)</span> arbitrary positive numbers; let <span class="math inline">\(y_1, y_2, \ldots, y_n\)</span> be another <span class="math inline">\(n\)</span> arbitrary positive numbers. Show that <span class="math display">\[
+\hbox{min}\{x_1/y_1, x_2/y_2, \ldots, x_n/y_n\}\le \frac{\sum_{i=1}^n x_i}{\sum_{i=1}^n y_i} \le \hbox{max}\{x_1/y_1, x_2/y_2, \ldots, x_n/y_n\}.
+\]</span></p>
+</div>
 </div>
 <div id="hard-combinatorics" class="section level2">
 <h2><span class="header-section-number">5.3</span> Hard Combinatorics</h2>
