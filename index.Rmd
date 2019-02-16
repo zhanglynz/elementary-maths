@@ -22,7 +22,7 @@ To be written.
 
 # Beautiful Geomtry
 
-## Plan Geometry
+## Plane Geometry
 
 ## Coordiante Geometry
 
