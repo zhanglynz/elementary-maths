@@ -61,7 +61,7 @@ b. Covert $2.1\dot{2}\dot{3}$ to a fraction.
 
 ### How much money can you save? {-}
 
-Like me, if you take a bus and go to the downtown, you probably will see see ads in front of a shop, saying "Buy one and get the second for half price!" Here, a natural qestion to ask is: How much is the saving?
+Like me, if you take a bus and go to the downtown, you probably will see an ads in front of a shop, saying "Buy one and get the second for half price!" Here, a natural qestion to ask is: How much is the saving?
 
 I guess you can solve the above question in a way. However, trust me, the best way to solve the above problem is usig **Algebra** as shown below.
 
