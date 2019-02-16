@@ -1,0 +1,42 @@
+--- 
+title: "The joy of elementary maths"
+author: "Lingyun Zhang"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+link-citations: yes
+links-as-notes: true
+colorlinks: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Preface {-}
+
+To be written.
+
+# Fun Algebra
+
+# Beautiful Geomtry
+
+## Plan Geometry
+
+## Coordiante Geometry
+
+# Tricky Trigonometrics
+
+# Complex Numbers
+
+# Other Stuff
+
+## Interesting Number Series
+
+## Serious Inequlities
+
+## Hard Combinatorics
+
+
+
