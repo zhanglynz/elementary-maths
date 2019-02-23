@@ -136,7 +136,7 @@ $$
 
 We all know that the sum of the three inner angles of a triangle is equal to $180^{\circ}$, but why is this true? Below a simple proof answers the question.
 
-**Proof.** Observing the picture below, we have
+**Proof.** Observing the Figure \@ref(fig:trifig) below, we have
 $$
 \theta_1 + \theta_2 + \theta_3 = 360^{\circ},
 $$
@@ -149,8 +149,10 @@ $$
 \angle A + \angle B + \angle C = 540^{\circ} - 360^{\circ}=180^{\circ}.
 $$
 The proof is completed.
+```{r, trifig, echo=FALSE, fig.align = 'center', fig.cap="A triangle."}
+knitr::include_graphics("figures/triangl.png")
+```
 
-![](figures/triangl.png)
 
 **Exercise:** Suppose that we set a complete turn is $100^{\circ}$ but not $360^{\circ}$ any more. Then, what is the sum of the inner angles of a triangle?
 
