@@ -127,6 +127,26 @@ $$
 \end{array}
 $$
 
+### Find a continued fraction {-}
+
+What is the following number
+$$
+2 + \frac{1}{2+\frac{1}{2+\frac{1}{\frac{1}{2+\cdots}}}}?
+$$
+This is an interesting problem. I only know one way to solve it---using Algebra.
+
+**Solution.** Let $x$ be the number. We have
+\begin{equation}
+2 + \frac{1}{x} = x, (\#eq:c-fr-eq)
+\end{equation}
+Solving \@ref(eq:c-fr-eq), we get
+$$
+x = 1 + \sqrt{2}\ \hbox{or}\ x = 1 - \sqrt{2}.
+$$
+Since $x$ must be positive, we only keep $x=1+\sqrt{2}$.
+
+
+
 
 # Beautiful Geomtry
 
@@ -155,6 +175,36 @@ knitr::include_graphics("figures/triangl.png")
 
 
 **Exercise:** Suppose that we set a complete turn is $100^{\circ}$ but not $360^{\circ}$ any more. Then, what is the sum of the inner angles of a triangle?
+
+
+### The Pythagorean Theorem (TPT)
+
+**TPT:** For any a right triangle, let $c$ be the length of the hypotenuse (the longest side), let $a$ and $b$ be the lengths of the other two sides. It's true that
+$$
+a^2+b^2=c^2.
+$$
+
+**Remark:** The book, *The Pythagorean Theorem*, written by Eli Maor, is all about the Theorem. According to this book, there are about 400 known proofs of the theorem. Below is an elegant proof and I like it the best.
+
+**Proof of TPT:** The key is to construct the following diagram
+```{r, py-fig, echo=FALSE, fig.align = 'center', fig.cap="Key diagram."}
+knitr::include_graphics("figures/pythagorean-fig.PNG")
+```
+So, we have the following equality: The area of the "big square" is the same as the area of the "four right triangles" plus the area of the "small square". That is,
+$$
+(a+b)^2 = 4(1/2)ab + c^2,
+$$
+which implies 
+\begin{equation}
+a^2+b^2+2ab=2ab + c^2 (\#eq:pytha-eq)
+\end{equation}
+Cancelling  the term $2ab$ from the both sides of \@ref(eq:pytha-eq), we get
+$$
+a^2+b^2=c^2.
+$$
+
+
+
 
 ## Coordiante Geometry
 

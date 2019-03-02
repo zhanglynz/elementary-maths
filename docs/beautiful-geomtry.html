@@ -25,7 +25,7 @@
 <meta name="author" content="Lingyun Zhang">
 
 
-<meta name="date" content="2019-02-24">
+<meta name="date" content="2019-03-03">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -69,11 +69,13 @@
 <li class="chapter" data-level="" data-path="fun-algebra.html"><a href="fun-algebra.html#how-much-money-can-you-save"><i class="fa fa-check"></i>How much money can you save?</a></li>
 <li><a href="fun-algebra.html#why-is-0.99999...1-true">Why is <span class="math inline">\(0.99999...=1\)</span> true?</a></li>
 <li class="chapter" data-level="" data-path="fun-algebra.html"><a href="fun-algebra.html#the-quadratic-formula"><i class="fa fa-check"></i>The quadratic formula</a></li>
+<li class="chapter" data-level="" data-path="fun-algebra.html"><a href="fun-algebra.html#find-a-continued-fraction"><i class="fa fa-check"></i>Find a continued fraction</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html"><i class="fa fa-check"></i><b>2</b> Beautiful Geomtry</a><ul>
 <li class="chapter" data-level="2.1" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#plane-geometry"><i class="fa fa-check"></i><b>2.1</b> Plane Geometry</a><ul>
 <li class="chapter" data-level="" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#sum-of-inner-angles-of-a-triangle"><i class="fa fa-check"></i>Sum of inner angles of a triangle</a></li>
+<li class="chapter" data-level="2.1.1" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#the-pythagorean-theorem-tpt"><i class="fa fa-check"></i><b>2.1.1</b> The Pythagorean Theorem (TPT)</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#coordiante-geometry"><i class="fa fa-check"></i><b>2.2</b> Coordiante Geometry</a></li>
 </ul></li>
@@ -124,6 +126,29 @@ Figure 2.1: A triangle.
 </p>
 </div>
 <p><strong>Exercise:</strong> Suppose that we set a complete turn is <span class="math inline">\(100^{\circ}\)</span> but not <span class="math inline">\(360^{\circ}\)</span> any more. Then, what is the sum of the inner angles of a triangle?</p>
+</div>
+<div id="the-pythagorean-theorem-tpt" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> The Pythagorean Theorem (TPT)</h3>
+<p><strong>TPT:</strong> For any a right triangle, let <span class="math inline">\(c\)</span> be the length of the hypotenuse (the longest side), let <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> be the lengths of the other two sides. It’s true that <span class="math display">\[
+a^2+b^2=c^2.
+\]</span></p>
+<p><strong>Remark:</strong> The book, <em>The Pythagorean Theorem</em>, written by Eli Maor, is all about the Theorem. According to this book, there are about 400 known proofs of the theorem. Below is an elegant proof and I like it the best.</p>
+<strong>Proof of TPT:</strong> The key is to construct the following diagram
+<div class="figure" style="text-align: center"><span id="fig:py-fig"></span>
+<img src="figures/pythagorean-fig.PNG" alt="Key diagram."  />
+<p class="caption">
+Figure 2.2: Key diagram.
+</p>
+</div>
+So, we have the following equality: The area of the “big square” is the same as the area of the “four right triangles” plus the area of the “small square”. That is, <span class="math display">\[
+(a+b)^2 = 4(1/2)ab + c^2,
+\]</span> which implies
+<span class="math display" id="eq:pytha-eq">\[\begin{equation}
+a^2+b^2+2ab=2ab + c^2 \tag{2.1}
+\end{equation}\]</span>
+<p>Cancelling the term <span class="math inline">\(2ab\)</span> from the both sides of <a href="beautiful-geomtry.html#eq:pytha-eq">(2.1)</a>, we get <span class="math display">\[
+a^2+b^2=c^2.
+\]</span></p>
 </div>
 </div>
 <div id="coordiante-geometry" class="section level2">
