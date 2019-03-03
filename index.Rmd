@@ -131,7 +131,7 @@ $$
 
 What is the following number
 $$
-2 + \frac{1}{2+\frac{1}{2+\frac{1}{\frac{1}{2+\cdots}}}}?
+2 + \frac{1}{2+\frac{1}{2+\frac{1}{2+\frac{1}{2+\cdots}}}}?
 $$
 This is an interesting problem. I only know one way to solve it---using Algebra.
 
