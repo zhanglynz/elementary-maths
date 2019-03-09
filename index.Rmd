@@ -177,7 +177,7 @@ knitr::include_graphics("figures/triangl.png")
 **Exercise:** Suppose that we set a complete turn is $100^{\circ}$ but not $360^{\circ}$ any more. Then, what is the sum of the inner angles of a triangle?
 
 
-### The Pythagorean Theorem (TPT)
+### The Pythagorean Theorem (TPT) {-}
 
 **TPT:** For any a right triangle, let $c$ be the length of the hypotenuse (the longest side), let $a$ and $b$ be the lengths of the other two sides. It's true that
 $$
@@ -203,8 +203,87 @@ $$
 a^2+b^2=c^2.
 $$
 
+### The Law of Cosines {-}
+
+For any a triangle $ABC$, it is true that
+\begin{equation}
+c^2= a^2 + b^2 - 2ab\cos C, (\#eq:cosine-eq)
+\end{equation}
+where $a$, $b$ and $c$ are the lengths of the sides that opposite to angles $A$, $B$ and $C$, respectively.
+
+**Proof:** We distinguish three cases.
+
+**Case 1:** $C=90^{\circ}$. In this case, the right hand side of Equation \@ref(eq:cosine-eq) is
+$$
+a^2 + b^2
+$$
+which equals $c^2$---the left hand side---according to The Pythagorean Theorem (TPT).
+
+**Case 2:** $C>90^{\circ}$. In this case, we use Figure \@ref(fig:cosines-fig), and we have
+$$
+\begin{array}{lcl}
+c^2& =& h^2 + (b_1 + b)^2\ \ \ [\hbox{according to TPT}]\\
+&=&a^2 - b_1^2 + b_1^2 +2b_1b +b^2\ \ \ [\hbox{using TPT again}]\\
+&=&a^2 + b^2 + 2b_1b\\
+&=&a^2 + b^2 + 2a\cos(\angle BCD)b\\
+&=&a^2 + b^2 + 2a\cos(180^{\circ} - C)b\\
+&=&a^2 + b^2 - 2ab\cos C
+\end{array}
+$$
+```{r, cosines-fig, echo=FALSE, fig.align = 'center', fig.cap="Figure for Case 2."}
+knitr::include_graphics("figures/law_of_cosines.PNG")
+```
 
 
+**Case 3:** $C<90^{\circ}$. In this case, we use Figure \@ref(fig:cosines-case3-fig), and we have
+$$
+\begin{array}{lcl}
+c^2&=& h^2 + b_2^2\ \ \ [\hbox{according to TPT}]\\
+&=&a^2-b_1^2 + b_2^2\ \ \ [\hbox{using TPT again}]\\
+&=&a^2 + (b_1 +b_2)^2 - 2b_1b_2 - 2b_1^2\\
+&=&a^2 + b^2 - 2b_1(b_2+b_1)\\
+&=&a^2 + b^2 - 2b_1b\\
+&=&a^2 + b^2 - 2ab\cos C
+\end{array}
+$$
+
+
+```{r, cosines-case3-fig, echo=FALSE, fig.align = 'center', fig.cap="Figure for Case 3."}
+knitr::include_graphics("figures/cosines_law_case3.PNG")
+```
+
+### The Law of Sines {-}
+
+For any a triangle $ABC$, it is true that
+\begin{equation}
+\frac{a}{\sin A} = \frac{b}{\sin B}=\frac{c}{\sin C}=\frac{abc}{2T} (\#eq:sines-eq)
+\end{equation}
+where $a$, $b$ and $c$ are the lengths of the sides that opposite to angles $A$, $B$ and $C$, respectively; $T$ is the area of the triangle.
+
+**Proof:** This is easy if we have noticed that
+$$
+T = \frac{1}{2}ab\sin C=\frac{1}{2} ac \sin B = \frac{1}{2} bc \sin A.
+$$
+
+### Heron's Formula {-}
+
+For any a triangle $ABC$ it is true that
+\begin{equation}
+T = \sqrt{s(s-a)(s-b)(s-c)}, (\#eq:heron-eq)
+\end{equation}
+where $T$ is the area, $a$, $b$ and $c$ are the lengths of the three sides (opposite to angles $A$, $B$ and $C$, respectively), $s=(a+b+c)/2$.
+
+**Proof:** Let $RHS$ be the Right-Hand-Side of Equation \@ref(eq:heron-eq).
+$$
+\begin{array}{lcl}
+RHS &=& \frac{1}{4}\sqrt{(a+b+c)(b+c-a)(a+c-b)(a+b-c)}\\
+&=& \frac{1}{4}\sqrt{[(b+c)^2-a^2][a^2-(c-b)^2]}\\
+&=& \frac{1}{4}\sqrt{(2bc+2bc\cos A)(2bc-2bc\cos A)}\ \ \ [\hbox{according to the law of cosines}]\\
+&=&\frac{1}{2}bc\sqrt{1-\cos^2A}\\
+&=&\frac{1}{2}bc\sin A\\
+&=&T
+\end{array}
+$$
 
 ## Coordiante Geometry
 
