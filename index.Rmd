@@ -203,7 +203,7 @@ $$
 a^2+b^2=c^2.
 $$
 
-### The Law of Cosines {-}
+### The law of cosines {-}
 
 For any a triangle $ABC$, it is true that
 \begin{equation}
@@ -252,7 +252,7 @@ $$
 knitr::include_graphics("figures/cosines_law_case3.PNG")
 ```
 
-### The Law of Sines {-}
+### The law of sines {-}
 
 For any a triangle $ABC$, it is true that
 \begin{equation}
@@ -265,7 +265,7 @@ $$
 T = \frac{1}{2}ab\sin C=\frac{1}{2} ac \sin B = \frac{1}{2} bc \sin A.
 $$
 
-### Heron's Formula {-}
+### Heron's formula {-}
 
 For any a triangle $ABC$ it is true that
 \begin{equation}
@@ -284,6 +284,49 @@ RHS &=& \frac{1}{4}\sqrt{(a+b+c)(b+c-a)(a+c-b)(a+b-c)}\\
 &=&T
 \end{array}
 $$
+
+### Similarity between two triangles {-}
+
+For any two triangles, say $ABC$ and $DEF$, if
+$$
+\angle A = \angle D, \ \angle B = \angle E,\ \hbox{and}\ \angle C = \angle F,
+$$
+then 
+$$
+\frac{AB}{DE}=\frac{BC}{EF}=\frac{CA}{FD}.
+$$
+(It's said that the two angles are **similar**. See Figure \@ref(fig:similar-fig))
+
+**Proof:** Using the law of sines twice, we have
+$$
+\frac{AB}{\sin C}=\frac{BC}{\sin A},
+$$
+and
+$$
+\frac{DE}{\sin F}=\frac{EF}{\sin D}.
+$$
+Next, doing "division", we have
+\begin{equation}
+\frac{\frac{AB}{\sin C}}{\frac{DE}{\sin F}}=\frac{\frac{BC}{\sin A}}{\frac{EF}{\sin D}}. (\#eq:similar-ratio)
+\end{equation}
+Since
+$$
+\angle C = \angle F\ \hbox{and}\ \angle A=\angle D,
+$$
+Equation \@ref(eq:similar-ratio) can be simplified as
+$$
+\frac{AB}{DE}=\frac{BC}{EF}.
+$$
+In a similar manner, we can show that
+$$
+\frac{AB}{DE}=\frac{CA}{FD},
+$$
+and the proof is completed.
+
+
+```{r, similar-fig, echo=FALSE, fig.align = 'center', fig.cap="Two similar triangles"}
+knitr::include_graphics("figures/similar_triangles.PNG")
+```
 
 ## Coordiante Geometry
 

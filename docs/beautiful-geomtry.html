@@ -25,7 +25,7 @@
 <meta name="author" content="Lingyun Zhang">
 
 
-<meta name="date" content="2019-03-09">
+<meta name="date" content="2019-03-10">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -76,9 +76,10 @@
 <li class="chapter" data-level="2.1" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#plane-geometry"><i class="fa fa-check"></i><b>2.1</b> Plane Geometry</a><ul>
 <li class="chapter" data-level="" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#sum-of-inner-angles-of-a-triangle"><i class="fa fa-check"></i>Sum of inner angles of a triangle</a></li>
 <li class="chapter" data-level="" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#the-pythagorean-theorem-tpt"><i class="fa fa-check"></i>The Pythagorean Theorem (TPT)</a></li>
-<li class="chapter" data-level="" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#the-law-of-cosines"><i class="fa fa-check"></i>The Law of Cosines</a></li>
-<li class="chapter" data-level="" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#the-law-of-sines"><i class="fa fa-check"></i>The Law of Sines</a></li>
-<li class="chapter" data-level="" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#herons-formula"><i class="fa fa-check"></i>Heron’s Formula</a></li>
+<li class="chapter" data-level="" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#the-law-of-cosines"><i class="fa fa-check"></i>The law of cosines</a></li>
+<li class="chapter" data-level="" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#the-law-of-sines"><i class="fa fa-check"></i>The law of sines</a></li>
+<li class="chapter" data-level="" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#herons-formula"><i class="fa fa-check"></i>Heron’s formula</a></li>
+<li class="chapter" data-level="" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#similarity-between-two-triangles"><i class="fa fa-check"></i>Similarity between two triangles</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#coordiante-geometry"><i class="fa fa-check"></i><b>2.2</b> Coordiante Geometry</a></li>
 </ul></li>
@@ -154,7 +155,7 @@ a^2+b^2=c^2.
 \]</span></p>
 </div>
 <div id="the-law-of-cosines" class="section level3 unnumbered">
-<h3>The Law of Cosines</h3>
+<h3>The law of cosines</h3>
 For any a triangle <span class="math inline">\(ABC\)</span>, it is true that
 <span class="math display" id="eq:cosine-eq">\[\begin{equation}
 c^2= a^2 + b^2 - 2ab\cos C, \tag{2.2}
@@ -198,7 +199,7 @@ Figure 2.4: Figure for Case 3.
 </div>
 </div>
 <div id="the-law-of-sines" class="section level3 unnumbered">
-<h3>The Law of Sines</h3>
+<h3>The law of sines</h3>
 For any a triangle <span class="math inline">\(ABC\)</span>, it is true that
 <span class="math display" id="eq:sines-eq">\[\begin{equation}
 \frac{a}{\sin A} = \frac{b}{\sin B}=\frac{c}{\sin C}=\frac{abc}{2T} \tag{2.3}
@@ -209,7 +210,7 @@ T = \frac{1}{2}ab\sin C=\frac{1}{2} ac \sin B = \frac{1}{2} bc \sin A.
 \]</span></p>
 </div>
 <div id="herons-formula" class="section level3 unnumbered">
-<h3>Heron’s Formula</h3>
+<h3>Heron’s formula</h3>
 For any a triangle <span class="math inline">\(ABC\)</span> it is true that
 <span class="math display" id="eq:heron-eq">\[\begin{equation}
 T = \sqrt{s(s-a)(s-b)(s-c)}, \tag{2.4}
@@ -225,6 +226,35 @@ RHS &amp;=&amp; \frac{1}{4}\sqrt{(a+b+c)(b+c-a)(a+c-b)(a+b-c)}\\
 &amp;=&amp;T
 \end{array}
 \]</span></p>
+</div>
+<div id="similarity-between-two-triangles" class="section level3 unnumbered">
+<h3>Similarity between two triangles</h3>
+<p>For any two triangles, say <span class="math inline">\(ABC\)</span> and <span class="math inline">\(DEF\)</span>, if <span class="math display">\[
+\angle A = \angle D, \ \angle B = \angle E,\ \hbox{and}\ \angle C = \angle F,
+\]</span> then <span class="math display">\[
+\frac{AB}{DE}=\frac{BC}{EF}=\frac{CA}{FD}.
+\]</span> (It’s said that the two angles are <strong>similar</strong>. See Figure <a href="beautiful-geomtry.html#fig:similar-fig">2.5</a>)</p>
+<strong>Proof:</strong> Using the law of sines twice, we have <span class="math display">\[
+\frac{AB}{\sin C}=\frac{BC}{\sin A},
+\]</span> and <span class="math display">\[
+\frac{DE}{\sin F}=\frac{EF}{\sin D}.
+\]</span> Next, doing “division”, we have
+<span class="math display" id="eq:similar-ratio">\[\begin{equation}
+\frac{\frac{AB}{\sin C}}{\frac{DE}{\sin F}}=\frac{\frac{BC}{\sin A}}{\frac{EF}{\sin D}}. \tag{2.5}
+\end{equation}\]</span>
+<p>Since <span class="math display">\[
+\angle C = \angle F\ \hbox{and}\ \angle A=\angle D,
+\]</span> Equation <a href="beautiful-geomtry.html#eq:similar-ratio">(2.5)</a> can be simplified as <span class="math display">\[
+\frac{AB}{DE}=\frac{BC}{EF}.
+\]</span> In a similar manner, we can show that <span class="math display">\[
+\frac{AB}{DE}=\frac{CA}{FD},
+\]</span> and the proof is completed.</p>
+<div class="figure" style="text-align: center"><span id="fig:similar-fig"></span>
+<img src="figures/similar_triangles.PNG" alt="Two similar triangles"  />
+<p class="caption">
+Figure 2.5: Two similar triangles
+</p>
+</div>
 </div>
 </div>
 <div id="coordiante-geometry" class="section level2">
