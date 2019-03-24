@@ -332,6 +332,68 @@ knitr::include_graphics("figures/similar_triangles.PNG")
 
 # Tricky Trigonometrics
 
+## Basic facts about right triangles
+
+- **(F1)** Theare are infinite right triangles.
+
+- **(F2)** Let $ABC$ be a right triangle and $\angle C=90^\circ$. It is true that
+$$
+\angle A + \angle B = 90^\circ.
+$$
+That is to say, once we know a non-right angle (e.g. the smallest angle) in the right triangle, we then know all the three angles. To put this in another way: When we study a right triangle in terms of angles, we only need to pay attention to one of its non-right angle.
+
+- **(F3)** For any two right triangles, $ABC$ and $DEF$, they are similar if and only if one non-right angle in $ABC$ is equal to an angle in $DEF$.
+
+## The six ratios
+
+Take two right triangles $ABC$ and $DEF$ such that
+$$
+\angle C= \angle F = 90^\circ\ \hbox{and}\ \angle A =\angle D = \theta,
+$$
+where $0^\circ < \theta < 90^\circ$ and $\theta$ is fixed (e.g. $\theta = 30^\circ$).
+
+```{r, two-right-triangles-fig, echo=FALSE, fig.align = 'center', fig.cap="Two similar right triangles"}
+knitr::include_graphics("figures/two_right_triangles.PNG")
+```
+
+According to **(F3)**, we know that $ABC$ and $DEF$ are similar. Thus, we have
+$$
+\frac{BC}{EF}=\frac{AB}{DE}\Rightarrow \left\{
+\begin{array}{ccc}
+\frac{BC}{AB}&=&\frac{EF}{DE},\\
+\frac{AB}{BC}&=&\frac{DE}{EF};
+\end{array}
+\right.
+$$
+$$
+\frac{AC}{DF}=\frac{AB}{DE}\Rightarrow \left\{
+\begin{array}{ccc}
+\frac{AC}{AB}&=&\frac{DF}{DE},\\
+\frac{AB}{AC}&=&\frac{DE}{DF};
+\end{array}
+\right.
+$$
+$$
+\frac{AC}{DF}=\frac{BC}{EF}\Rightarrow \left\{
+\begin{array}{ccc}
+\frac{AC}{BC}&=&\frac{DF}{EF},\\
+\frac{BC}{AC}&=&\frac{EF}{DF}.
+\end{array}
+\right.
+$$
+
+Based on the above, we can draw the conclusion:
+The six ratios, $\frac{BC}{AB}$, $\frac{AB}{BC}$, $\frac{AC}{AB}$, $\frac{AB}{AC}$, $\frac{BC}{AC}$ and $\frac{AC}{BC}$ are determined by $\theta$. At this point, for any $0^\circ < \theta < 90^\circ$, we can make the following **definitions**:
+$$
+\begin{array}{c}
+\sin \theta = \frac{BC}{AB},\ \ \csc \theta = \frac{AB}{BC}=\frac{1}{\sin \theta}\\
+\cos \theta = \frac{AC}{AB}.\ \ \sec \theta = \frac{AB}{AC}=\frac{1}{\cos \theta}\\
+\tan \theta = \frac{BC}{AC},\ \ \cot \theta = \frac{AC}{BC}=\frac{1}{\tan \theta},
+\end{array}
+$$
+
+## Extension
+
 # Complex Numbers
 
 # Other Stuff

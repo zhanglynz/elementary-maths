@@ -25,7 +25,7 @@
 <meta name="author" content="Lingyun Zhang">
 
 
-<meta name="date" content="2019-03-10">
+<meta name="date" content="2019-03-24">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -83,7 +83,11 @@
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="beautiful-geomtry.html"><a href="beautiful-geomtry.html#coordiante-geometry"><i class="fa fa-check"></i><b>2.2</b> Coordiante Geometry</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="tricky-trigonometrics.html"><a href="tricky-trigonometrics.html"><i class="fa fa-check"></i><b>3</b> Tricky Trigonometrics</a></li>
+<li class="chapter" data-level="3" data-path="tricky-trigonometrics.html"><a href="tricky-trigonometrics.html"><i class="fa fa-check"></i><b>3</b> Tricky Trigonometrics</a><ul>
+<li class="chapter" data-level="3.1" data-path="tricky-trigonometrics.html"><a href="tricky-trigonometrics.html#basic-facts-about-right-triangles"><i class="fa fa-check"></i><b>3.1</b> Basic facts about right triangles</a></li>
+<li class="chapter" data-level="3.2" data-path="tricky-trigonometrics.html"><a href="tricky-trigonometrics.html#the-six-ratios"><i class="fa fa-check"></i><b>3.2</b> The six ratios</a></li>
+<li class="chapter" data-level="3.3" data-path="tricky-trigonometrics.html"><a href="tricky-trigonometrics.html#extension"><i class="fa fa-check"></i><b>3.3</b> Extension</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="complex-numbers.html"><a href="complex-numbers.html"><i class="fa fa-check"></i><b>4</b> Complex Numbers</a></li>
 <li class="chapter" data-level="5" data-path="other-stuff.html"><a href="other-stuff.html"><i class="fa fa-check"></i><b>5</b> Other Stuff</a><ul>
 <li class="chapter" data-level="5.1" data-path="other-stuff.html"><a href="other-stuff.html#interesting-number-series"><i class="fa fa-check"></i><b>5.1</b> Interesting Number Series</a></li>
@@ -111,6 +115,60 @@
             <section class="normal" id="section-">
 <div id="tricky-trigonometrics" class="section level1">
 <h1><span class="header-section-number">3</span> Tricky Trigonometrics</h1>
+<div id="basic-facts-about-right-triangles" class="section level2">
+<h2><span class="header-section-number">3.1</span> Basic facts about right triangles</h2>
+<ul>
+<li><p><strong>(F1)</strong> Theare are infinite right triangles.</p></li>
+<li><p><strong>(F2)</strong> Let <span class="math inline">\(ABC\)</span> be a right triangle and <span class="math inline">\(\angle C=90^\circ\)</span>. It is true that <span class="math display">\[
+\angle A + \angle B = 90^\circ.
+\]</span> That is to say, once we know a non-right angle (e.g. the smallest angle) in the right triangle, we then know all the three angles. To put this in another way: When we study a right triangle in terms of angles, we only need to pay attention to one of its non-right angle.</p></li>
+<li><p><strong>(F3)</strong> For any two right triangles, <span class="math inline">\(ABC\)</span> and <span class="math inline">\(DEF\)</span>, they are similar if and only if one non-right angle in <span class="math inline">\(ABC\)</span> is equal to an angle in <span class="math inline">\(DEF\)</span>.</p></li>
+</ul>
+</div>
+<div id="the-six-ratios" class="section level2">
+<h2><span class="header-section-number">3.2</span> The six ratios</h2>
+<p>Take two right triangles <span class="math inline">\(ABC\)</span> and <span class="math inline">\(DEF\)</span> such that <span class="math display">\[
+\angle C= \angle F = 90^\circ\ \hbox{and}\ \angle A =\angle D = \theta,
+\]</span> where <span class="math inline">\(0^\circ &lt; \theta &lt; 90^\circ\)</span> and <span class="math inline">\(\theta\)</span> is fixed (e.g. <span class="math inline">\(\theta = 30^\circ\)</span>).</p>
+<div class="figure" style="text-align: center"><span id="fig:two-right-triangles-fig"></span>
+<img src="figures/two_right_triangles.PNG" alt="Two similar right triangles"  />
+<p class="caption">
+Figure 3.1: Two similar right triangles
+</p>
+</div>
+<p>According to <strong>(F3)</strong>, we know that <span class="math inline">\(ABC\)</span> and <span class="math inline">\(DEF\)</span> are similar. Thus, we have <span class="math display">\[
+\frac{BC}{EF}=\frac{AB}{DE}\Rightarrow \left\{
+\begin{array}{ccc}
+\frac{BC}{AB}&amp;=&amp;\frac{EF}{DE},\\
+\frac{AB}{BC}&amp;=&amp;\frac{DE}{EF};
+\end{array}
+\right.
+\]</span> <span class="math display">\[
+\frac{AC}{DF}=\frac{AB}{DE}\Rightarrow \left\{
+\begin{array}{ccc}
+\frac{AC}{AB}&amp;=&amp;\frac{DF}{DE},\\
+\frac{AB}{AC}&amp;=&amp;\frac{DE}{DF};
+\end{array}
+\right.
+\]</span> <span class="math display">\[
+\frac{AC}{DF}=\frac{BC}{EF}\Rightarrow \left\{
+\begin{array}{ccc}
+\frac{AC}{BC}&amp;=&amp;\frac{DF}{EF},\\
+\frac{BC}{AC}&amp;=&amp;\frac{EF}{DF}.
+\end{array}
+\right.
+\]</span></p>
+<p>Based on the above, we can draw the conclusion: The six ratios, <span class="math inline">\(\frac{BC}{AB}\)</span>, <span class="math inline">\(\frac{AB}{BC}\)</span>, <span class="math inline">\(\frac{AC}{AB}\)</span>, <span class="math inline">\(\frac{AB}{AC}\)</span>, <span class="math inline">\(\frac{BC}{AC}\)</span> and <span class="math inline">\(\frac{AC}{BC}\)</span> are determined by <span class="math inline">\(\theta\)</span>. At this point, for any <span class="math inline">\(0^\circ &lt; \theta &lt; 90^\circ\)</span>, we can make the following <strong>definitions</strong>: <span class="math display">\[
+\begin{array}{c}
+\sin \theta = \frac{BC}{AB},\ \ \csc \theta = \frac{AB}{BC}=\frac{1}{\sin \theta}\\
+\cos \theta = \frac{AC}{AB}.\ \ \sec \theta = \frac{AB}{AC}=\frac{1}{\cos \theta}\\
+\tan \theta = \frac{BC}{AC},\ \ \cot \theta = \frac{AC}{BC}=\frac{1}{\tan \theta},
+\end{array}
+\]</span></p>
+</div>
+<div id="extension" class="section level2">
+<h2><span class="header-section-number">3.3</span> Extension</h2>
+</div>
 </div>
             </section>
 
