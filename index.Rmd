@@ -353,7 +353,7 @@ knitr::include_graphics("figures/similar_triangles.PNG")
 
 # Tricky Trigonometrics
 
-## Basic facts about right triangles
+## Basic Facts About Right Triangles
 
 - **(F1)** There are infinite right triangles.
 
@@ -365,7 +365,7 @@ That is to say, once we know a non-right angle (e.g. the smallest angle) in the 
 
 - **(F3)** For any two right triangles, $ABC$ and $DEF$, they are similar if and only if one non-right angle in $ABC$ is equal to an angle in $DEF$.
 
-## The six ratios
+## The Six Ratios
 
 Take two right triangles $ABC$ and $DEF$ such that
 $$
