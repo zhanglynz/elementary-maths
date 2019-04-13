@@ -52,6 +52,8 @@ NB: This is the so-called **quadratic formula**. To derive the formula, we need 
 - The purpose for **factorization** is to find roots of an equation, or to simplify an algebraic expression.
 
 
+- We can use the *method of elimination* to solve a system of linear equations. 
+
 ## Examples
 
 ### How much money can you save? {-}
@@ -145,7 +147,26 @@ x = 1 + \sqrt{2}\ \hbox{or}\ x = 1 - \sqrt{2}.
 $$
 Since $x$ must be positive, we only keep $x=1+\sqrt{2}$.
 
+### Chichens and rabbits problem {-}
 
+Chickens and rabbits are kept in the same cage. Someone has done the counting and provided the information: there are 66 heads and 216 feet in the cage. How many chickens and rabbits, respectively, are there in the cage?
+
+**Solution.** The two unknowns are $C$ and $R$, which are the number of chickens and the number of rabbits in the cage, respectively. Noting that each chicken has two feet and each rabbit has four feet, we can translate the information provided in the problem into the following equations:
+$$
+\begin{array}{ccl}
+C+R &=&66 \\ 
+2C+4R &=& 216 
+\end{array}
+$$
+We use the *method of elimination* to solve the above two equations. To "knock out" the unknown $C$, we subtract $2\times$the first equation from the second equation and we have
+$$
+2R=84,
+$$
+from which we get
+$$
+R=42
+$$
+Next, we can easily find $C=24$. The final answer: $C=24$ and $R=42$.
 
 
 # Beautiful Geomtry
@@ -334,7 +355,7 @@ knitr::include_graphics("figures/similar_triangles.PNG")
 
 ## Basic facts about right triangles
 
-- **(F1)** Theare are infinite right triangles.
+- **(F1)** There are infinite right triangles.
 
 - **(F2)** Let $ABC$ be a right triangle and $\angle C=90^\circ$. It is true that
 $$
