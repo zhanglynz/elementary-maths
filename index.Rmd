@@ -415,6 +415,41 @@ $$
 
 ## Extension
 
+So, for any $0^\circ < \theta < 90^\circ$, we can define $\sin \theta$ (its reciprocal $\csc \theta$), $\cos \theta$ (its reciprocal $\sec \theta$), and $\tan \theta$ (its reciprocal $\cot \theta$). Next, we extend the domain of $\theta$ outside $(0^\circ, 90^\circ)$, and we also allow $\theta$ to be negative. The key is to use **circles** and **coordinates**.
+
+```{r, trig-func-extension-fig, echo=FALSE, fig.align = 'center', fig.cap="Illustration"}
+knitr::include_graphics("figures/trig_extension.PNG")
+```
+
+For any $0^\circ \le \theta \le 360^\circ$, we draw $OP$ such that i) point $P$ is on the circle and ii) the angle from the $x$-axis to $OP$ (**anticlockwise**) is $\theta$ (see the Figure \@ref(fig:trig-func-extension-fig).) Then, we define
+$$
+\begin{array}{ccl}
+\sin \theta &=&\frac{y}{\sqrt{x^2+y^2}}\\
+\cos \theta &=&\frac{x}{\sqrt{x^2+y^2}}\\
+\tan \theta &=& \frac{y}{x}\ \ (\hbox{provided}\ x\neq 0)
+\end{array}
+$$
+
+If point $Q$ is on the circle and the angle from the $x$-axis to $OQ$ (**clockwise**) is $-\theta$, then the coordinates of point $Q$ must be $(x, -y)$. Therefore, we have
+$$
+\begin{array}{ccl}
+\sin(-\theta) &=& \frac{-y}{\sqrt{x^2 +(-y)^2}} = -\frac{y}{\sqrt{x^2 +y^2}}=-\sin\theta\\
+\cos(-\theta) &=& \frac{x}{\sqrt{x^2 +(-y)^2}} = \frac{x}{\sqrt{x^2 +y^2}}=\cos\theta\\
+\tan(-\theta) &=& \frac{-y}{x} = -\frac{y}{x}=-\tan\theta\\
+\end{array}
+$$
+
+Based on the above definition, we derive the following equations: For $k=0,\ \pm 1,\ \pm 2, \ldots$
+$$
+\begin{array}{ccl}
+\sin(k\cdot 360^\circ +\theta) &=& \sin\theta,\\
+\cos(k\cdot 360^\circ +\theta) &=& \cos\theta,\\
+\tan(k\cdot 360^\circ +\theta) &=& \tan\theta,\\
+\end{array}
+$$
+since $k\cdot 360^\circ+\theta$ and $\theta$ correspond to the same point on the circle.
+
+
 # Complex Numbers
 
 # Other Stuff
