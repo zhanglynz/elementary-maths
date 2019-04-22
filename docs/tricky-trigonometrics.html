@@ -25,7 +25,7 @@
 <meta name="author" content="Lingyun Zhang">
 
 
-<meta name="date" content="2019-04-21">
+<meta name="date" content="2019-04-22">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -88,6 +88,7 @@
 <li class="chapter" data-level="3.1" data-path="tricky-trigonometrics.html"><a href="tricky-trigonometrics.html#basic-facts-about-right-triangles"><i class="fa fa-check"></i><b>3.1</b> Basic Facts About Right Triangles</a></li>
 <li class="chapter" data-level="3.2" data-path="tricky-trigonometrics.html"><a href="tricky-trigonometrics.html#the-six-ratios"><i class="fa fa-check"></i><b>3.2</b> The Six Ratios</a></li>
 <li class="chapter" data-level="3.3" data-path="tricky-trigonometrics.html"><a href="tricky-trigonometrics.html#extension"><i class="fa fa-check"></i><b>3.3</b> Extension</a></li>
+<li class="chapter" data-level="3.4" data-path="tricky-trigonometrics.html"><a href="tricky-trigonometrics.html#radians"><i class="fa fa-check"></i><b>3.4</b> Radians</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="complex-numbers.html"><a href="complex-numbers.html"><i class="fa fa-check"></i><b>4</b> Complex Numbers</a></li>
 <li class="chapter" data-level="5" data-path="other-stuff.html"><a href="other-stuff.html"><i class="fa fa-check"></i><b>5</b> Other Stuff</a><ul>
@@ -197,6 +198,55 @@ Figure 3.2: Illustration
 \tan(k\cdot 360^\circ +\theta) &amp;=&amp; \tan\theta,\\
 \end{array}
 \]</span> since <span class="math inline">\(k\cdot 360^\circ+\theta\)</span> and <span class="math inline">\(\theta\)</span> correspond to the same point on the circle.</p>
+</div>
+<div id="radians" class="section level2">
+<h2><span class="header-section-number">3.4</span> Radians</h2>
+<p>For any a given circle, let <span class="math inline">\(C\)</span> and <span class="math inline">\(r\)</span> denote the circumference and radius, respectively. It has been <strong>discovered</strong> that <span class="math display">\[
+\frac{C}{r}=2\pi.
+\]</span> Thus, <span class="math display">\[
+\begin{array}{ccl}
+\frac{C/2}{r} &amp;=&amp; \pi,\\
+\frac{C/4}{r} &amp;=&amp; \frac{\pi}{2},\\
+\frac{C/8}{r} &amp;=&amp; \frac{\pi}{4}.
+\end{array}
+\]</span> Long long time ago, it was <strong>decided</strong> that</p>
+<ul>
+<li>full circle (or a complete turn) corresponds to <span class="math inline">\(360^\circ\)</span>,</li>
+<li>half circle corresponds to <span class="math inline">\(180^\circ\)</span>,</li>
+<li>a quarter circle corresponds to <span class="math inline">\(90^\circ\)</span>.</li>
+</ul>
+<p>So, we have the 1-to-1 correspondence <span class="math display">\[
+\begin{array}{ccl}
+360^\circ &amp;\longleftrightarrow&amp; 2\pi\\
+180^\circ &amp;\longleftrightarrow&amp; 1/2 \cdot 2\pi=\pi\\
+90^\circ &amp;\longleftrightarrow&amp; 1/4 \cdot 2\pi=\pi/2\\
+&amp;\cdots&amp;
+\end{array}
+\]</span> Based on the above, for any <span class="math inline">\(0^\circ\le \alpha\le 360^\circ\)</span>, we know that <span class="math display">\[
+\alpha^\circ \longleftrightarrow \frac{\alpha}{360}\cdot 2\pi.
+\]</span> The point here is that for any an angle it can be associated with two numbers, namely <span class="math inline">\(\alpha^\circ\)</span> and <span class="math inline">\(\frac{\alpha}{360}\cdot 2\pi\ \hbox{radians}\)</span>. Thus, we establish the following equation <span class="math display">\[
+\alpha^\circ = \frac{\alpha}{360}\cdot 2\pi\ \hbox{radians}
+\]</span> <strong>Remark:</strong> For simplicity reason, we often use “rad” rather than “radian”.</p>
+<p><strong>Summary points:</strong></p>
+<ul>
+<li><p>For any an angle, we can either use <strong>degrees</strong> or <strong>radians</strong> to measure it. For example <span class="math display">\[
+\begin{array}{c}
+\angle A = 60^\circ = \frac{60}{360}\cdot 2\pi\ \hbox{rad}=\frac{\pi}{3}\ \hbox{rad}\\
+\angle B = 150^\circ = \frac{150}{360}\cdot 2\pi\ \hbox{rad}=\frac{5\pi}{6}\ \hbox{rad}\\
+\angle C = 1\ \hbox{rad}=\frac{1}{2\pi}\cdot 360^\circ\approx 57,3^\circ\\
+\angle D = 2.5\ \hbox{rad}=\frac{2.5}{2\pi}\cdot 360^\circ\approx 143.2^\circ
+\end{array}
+\]</span></p></li>
+<li><p>It can be shown that the length of circular arc (see Figure <a href="tricky-trigonometrics.html#fig:radian-fig">3.3</a>) is <span class="math display">\[
+l = r\theta.
+\]</span> (Proof: Since <span class="math inline">\(\frac{l}{C}=\frac{\theta}{2\pi}\)</span>, <span class="math inline">\(\frac{l}{\theta}=\frac{C}{2\pi}=r\)</span>, which implies that <span class="math inline">\(l=r\theta.\)</span>)</p></li>
+</ul>
+<div class="figure" style="text-align: center"><span id="fig:radian-fig"></span>
+<img src="figures/circular-arc.PNG" alt="Illustration"  />
+<p class="caption">
+Figure 3.3: Illustration
+</p>
+</div>
 </div>
 </div>
             </section>

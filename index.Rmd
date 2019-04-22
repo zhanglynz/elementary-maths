@@ -449,6 +449,66 @@ $$
 $$
 since $k\cdot 360^\circ+\theta$ and $\theta$ correspond to the same point on the circle.
 
+## Radians
+
+For any a given circle, let $C$ and $r$ denote the circumference and radius, respectively. It has been **discovered** that 
+$$
+\frac{C}{r}=2\pi.
+$$
+Thus,
+$$
+\begin{array}{ccl}
+\frac{C/2}{r} &=& \pi,\\
+\frac{C/4}{r} &=& \frac{\pi}{2},\\
+\frac{C/8}{r} &=& \frac{\pi}{4}.
+\end{array}
+$$
+Long long time ago, it was **decided** that
+
+- full circle (or a complete turn) corresponds to $360^\circ$,
+- half circle corresponds to $180^\circ$,
+- a quarter circle corresponds to $90^\circ$.
+
+So, we have the 1-to-1 correspondence
+$$
+\begin{array}{ccl}
+360^\circ &\longleftrightarrow& 2\pi\\
+180^\circ &\longleftrightarrow& 1/2 \cdot 2\pi=\pi\\
+90^\circ &\longleftrightarrow& 1/4 \cdot 2\pi=\pi/2\\
+&\cdots&
+\end{array}
+$$
+Based on the above, for any $0^\circ\le \alpha\le 360^\circ$, we know that
+$$
+\alpha^\circ \longleftrightarrow \frac{\alpha}{360}\cdot 2\pi.
+$$
+The point here is that for any an angle it can be associated with two numbers, namely $\alpha^\circ$ and $\frac{\alpha}{360}\cdot 2\pi\ \hbox{radians}$. Thus, we establish the following equation
+$$
+\alpha^\circ = \frac{\alpha}{360}\cdot 2\pi\ \hbox{radians}
+$$
+**Remark:** For simplicity reason, we often use "rad" rather than "radian".
+
+**Summary points:**
+
+- For any an angle, we can either use **degrees** or **radians** to measure it. For example
+$$
+\begin{array}{c}
+\angle A = 60^\circ = \frac{60}{360}\cdot 2\pi\ \hbox{rad}=\frac{\pi}{3}\ \hbox{rad}\\
+\angle B = 150^\circ = \frac{150}{360}\cdot 2\pi\ \hbox{rad}=\frac{5\pi}{6}\ \hbox{rad}\\
+\angle C = 1\ \hbox{rad}=\frac{1}{2\pi}\cdot 360^\circ\approx 57,3^\circ\\
+\angle D = 2.5\ \hbox{rad}=\frac{2.5}{2\pi}\cdot 360^\circ\approx 143.2^\circ
+\end{array}
+$$
+
+- It can be shown that the length of circular arc (see Figure \@ref(fig:radian-fig)) is
+$$
+l = r\theta.
+$$
+(Proof: Since $\frac{l}{C}=\frac{\theta}{2\pi}$, $\frac{l}{\theta}=\frac{C}{2\pi}=r$, which implies that $l=r\theta.$)
+
+```{r, radian-fig, echo=FALSE, fig.align = 'center', fig.cap="Illustration"}
+knitr::include_graphics("figures/circular-arc.PNG")
+```
 
 # Complex Numbers
 
