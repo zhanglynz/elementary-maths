@@ -512,6 +512,44 @@ knitr::include_graphics("figures/circular-arc.PNG")
 
 # Complex Numbers
 
+**Acknowledgement:** When I wrote this chapter, I was inspired by Chapter 5 "Portent of the ideal world"" of *In Pursuit of the Unknown---17 Equations That Changed the World* written by Ian Stewart.
+
+## What are complex numbers
+
+*Complex numbers* are the numbers in the 2-dimension space, i.e. the *plane*, and in  contrast *real numbers* are the numbers in the 1-dimension space, i.e. the *number line*. We can use **two** real numbers to express a complex number. For example, $(0, 0)$, $(1, 1)$, $(2, 2)$, $(4, 0)$, $(-2, 0)$, $(-2, -1)$, these six complex numbers correspond to the six points shown in Figure \@ref(fig:complex-number-fig1).
+
+
+```{r, complex-number-fig1, echo=FALSE, fig.align = 'center', fig.cap="Six points"}
+knitr::include_graphics("figures/complex_numbers_1.PNG")
+```
+
+Figure \@ref(fig:complex-number-fig2)  shows the general idea of any a complex number $(x, y)$.
+
+```{r, complex-number-fig2, echo=FALSE, fig.align = 'center', fig.cap="General idea about a complex number"}
+knitr::include_graphics("figures/complex_numbers_2.PNG")
+```
+
+After understanding what complex numbers are, immediately we can find the following facts:
+
+- All the real numbers are complex numbers, or in other words, $R$ (the set of all the real numbers) is a subset of $C$ (the set of all the complex numbers).
+- For any two complex numbers, say $z_1=(x_1, y_1)$ and $z_2=(x_2, y_2)$, if any of them is not real, then we cannot compare them, i.e. we just cannot know if $z_1<z_2$ or $z_1>z_2$.
+
+## How to make use of complex numbers
+
+Here we talk about the $+$ (addition), $-$ (subtraction), $\times$ (multiplication) 
+and $\div$ (division) operations between two complex numbers.
+
+Given any two complex numbers, $z_1=(x_1, y_1)$ and $z_2=(x_2, y_2)$:
+
+- $z_1+z_2=(x_1, y_1)+(x_2, y_2)=(x_1+x_2, y_1+y_2)$;
+
+- $z_1-z_2=(x_1, y_1)-(x_2, y_2)=(x_1-x_2, y_1-y_2)$;
+
+- $z_1\times z_2=(x_1, y_1)\times (x_2, y_2)=(x_1x_2-y_1y_2, x_1y_2+x_2y_1)$;
+
+- $\frac{z_1}{z_2}=\frac{(x_1, y_1)}{(x_2, y_2)}=\frac{(x_1, y_1)\times (x_2, -y_2)}{(x_2, y_2)\times (x_2, -y_2)}=\left(\frac{1}{x_2^2+y_2^2}, 0\right)\left[(x_1, y_1)\times (x_2, -y_2)\right]$
+
+
 # Other Stuff
 
 ## Interesting Number Series
