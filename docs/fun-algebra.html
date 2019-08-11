@@ -25,7 +25,7 @@
 <meta name="author" content="Lingyun Zhang">
 
 
-<meta name="date" content="2019-05-05">
+<meta name="date" content="2019-08-11">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -93,6 +93,8 @@
 <li class="chapter" data-level="4" data-path="complex-numbers.html"><a href="complex-numbers.html"><i class="fa fa-check"></i><b>4</b> Complex Numbers</a><ul>
 <li class="chapter" data-level="4.1" data-path="complex-numbers.html"><a href="complex-numbers.html#what-are-complex-numbers"><i class="fa fa-check"></i><b>4.1</b> What are complex numbers</a></li>
 <li class="chapter" data-level="4.2" data-path="complex-numbers.html"><a href="complex-numbers.html#how-to-make-use-of-complex-numbers"><i class="fa fa-check"></i><b>4.2</b> How to make use of complex numbers</a></li>
+<li class="chapter" data-level="4.3" data-path="complex-numbers.html"><a href="complex-numbers.html#why-complex-numbers"><i class="fa fa-check"></i><b>4.3</b> Why complex numbers</a></li>
+<li class="chapter" data-level="4.4" data-path="complex-numbers.html"><a href="complex-numbers.html#back-to-the-convention"><i class="fa fa-check"></i><b>4.4</b> Back to the convention</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="other-stuff.html"><a href="other-stuff.html"><i class="fa fa-check"></i><b>5</b> Other Stuff</a><ul>
 <li class="chapter" data-level="5.1" data-path="other-stuff.html"><a href="other-stuff.html#interesting-number-series"><i class="fa fa-check"></i><b>5.1</b> Interesting Number Series</a></li>
@@ -139,6 +141,18 @@ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a},\ \hbox{provided}\ b^2-4ac \ge 0.
 \]</span> NB: This is the so-called <strong>quadratic formula</strong>. To derive the formula, we need to use the “complete square method”; see this as an example in the next section.</p></li>
 <li><p>The purpose for <strong>factorization</strong> is to find roots of an equation, or to simplify an algebraic expression.</p></li>
 <li><p>We can use the <em>method of elimination</em> to solve a system of linear equations.</p></li>
+<li>The meaning of <span class="math inline">\(x^\alpha\)</span>, where <span class="math inline">\(x&gt;0\)</span> and <span class="math inline">\(\alpha\)</span> is an arbitrary real number. We need to distinguish the following cases.
+<ul>
+<li><strong>Case 1:</strong> <span class="math inline">\(\alpha=0\)</span>, then <span class="math inline">\(x^\alpha=x^0=1\)</span>;</li>
+<li><strong>Case 2:</strong> <span class="math inline">\(\alpha&lt;0\)</span>, then <span class="math inline">\(x^\alpha=\frac{1}{x^{-\alpha}}\)</span>;</li>
+<li><strong>Case 3:</strong> <span class="math inline">\(\alpha&gt;0\)</span>
+<ul>
+<li><strong>sub-case 1:</strong> <span class="math inline">\(\alpha\)</span> is an integer, then <span class="math inline">\(x^\alpha=\underbrace{x\times x\times\cdots \times x}_{\hbox{repeat}\ \alpha\ \hbox{times}}\)</span>;</li>
+<li><strong>sub-case 2:</strong> <span class="math inline">\(\alpha=1/p\)</span>, where <span class="math inline">\(p\)</span> is a positive integer, then <span class="math inline">\(x^\alpha\)</span> is such a number <span class="math inline">\(y\)</span> that <span class="math inline">\(y^p=x\)</span>;</li>
+<li><strong>sub-case 3:</strong> <span class="math inline">\(\alpha=q/p\)</span>, where <span class="math inline">\(p\)</span> and <span class="math inline">\(q\)</span> are positive integers and they are co-prime, then <span class="math inline">\(x^\alpha=x^{q/p}=\left(x^{1/p}\right)^q\)</span>;</li>
+<li><strong>sub-case 4:</strong> <span class="math inline">\(\alpha\)</span> is an irrational number, then we can find a rational number <span class="math inline">\(q/p\)</span> such that <span class="math inline">\(|q/p-\alpha|&lt;10^{-100}\)</span>, and <span class="math inline">\(x^{q/p}\)</span> can be regarded as <span class="math inline">\(x^\alpha\)</span>.</li>
+</ul></li>
+</ul></li>
 </ul>
 </div>
 <div id="examples" class="section level2">
@@ -182,7 +196,7 @@ x = 0.\dot{9}.
 <h3>The quadratic formula</h3>
 <p>A general quadratic equation is given by <span class="math display">\[
 ax^2+bx+c=0,
-\]</span> where <span class="math inline">\(a\neq 0\)</span>. Below is how to derive a formula to solve the equation. The method is called <em>complet square</em>.</p>
+\]</span> where <span class="math inline">\(a\neq 0\)</span>. Below is how to derive a formula to solve the equation. The method is called <em>complete square</em>.</p>
 <p><strong>Derivation of the quadratic formula.</strong> <span class="math display">\[
 \begin{array}{cl}
 &amp;ax^2+bx+c=0\\
@@ -215,7 +229,7 @@ x = 1 + \sqrt{2}\ \hbox{or}\ x = 1 - \sqrt{2}.
 C+R &amp;=&amp;66 \\ 
 2C+4R &amp;=&amp; 216 
 \end{array}
-\]</span> We use the <em>method of elimination</em> to solve the above two equations. To “knock out” the unknown <span class="math inline">\(C\)</span>, we subtract <span class="math inline">\(2\times\)</span>the first equation from the second equation and we have <span class="math display">\[
+\]</span> We use the <em>method of elimination</em> to solve the above two equations. To “knock out” the unknown <span class="math inline">\(C\)</span>, we subtract ‘two times the first equation’ from the second equation and we have <span class="math display">\[
 2R=84,
 \]</span> from which we get <span class="math display">\[
 R=42

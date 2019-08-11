@@ -54,6 +54,20 @@ NB: This is the so-called **quadratic formula**. To derive the formula, we need 
 
 - We can use the *method of elimination* to solve a system of linear equations. 
 
+
+- The meaning of $x^\alpha$, where $x>0$ and $\alpha$ is an arbitrary real number. We need to distinguish the following cases.
+    - **Case 1:** $\alpha=0$, then $x^\alpha=x^0=1$;
+    - **Case 2:** $\alpha<0$, then $x^\alpha=\frac{1}{x^{-\alpha}}$;
+    - **Case 3:** $\alpha>0$
+        - **sub-case 1:** $\alpha$ is an integer, then $x^\alpha=\underbrace{x\times x\times\cdots \times x}_{\hbox{repeat}\ \alpha\ \hbox{times}}$;
+        - **sub-case 2:** $\alpha=1/p$, where $p$ is a positive integer, then $x^\alpha$ is such a number $y$ that $y^p=x$;
+        - **sub-case 3:** $\alpha=q/p$, where $p$ and $q$ are positive integers and they are co-prime, then $x^\alpha=x^{q/p}=\left(x^{1/p}\right)^q$;
+        - **sub-case 4:** $\alpha$ is an irrational number, then we can find a rational number $q/p$ such that $|q/p-\alpha|<10^{-100}$, and $x^{q/p}$ can be regarded as $x^\alpha$.
+        
+    
+
+
+
 ## Examples
 
 ### How much money can you save? {-}
@@ -115,7 +129,7 @@ A general quadratic equation is given by
 $$
 ax^2+bx+c=0,
 $$
-where $a\neq 0$. Below is how to derive a formula to solve the equation. The method is called *complet square*.
+where $a\neq 0$. Below is how to derive a formula to solve the equation. The method is called *complete square*.
 
 **Derivation of the quadratic formula.**
 $$
@@ -158,7 +172,7 @@ C+R &=&66 \\
 2C+4R &=& 216 
 \end{array}
 $$
-We use the *method of elimination* to solve the above two equations. To "knock out" the unknown $C$, we subtract $2\times$the first equation from the second equation and we have
+We use the *method of elimination* to solve the above two equations. To "knock out" the unknown $C$, we subtract  'two times the first equation' from the second equation and we have
 $$
 2R=84,
 $$
@@ -548,6 +562,10 @@ Given any two complex numbers, $z_1=(x_1, y_1)$ and $z_2=(x_2, y_2)$:
 - $z_1\times z_2=(x_1, y_1)\times (x_2, y_2)=(x_1x_2-y_1y_2, x_1y_2+x_2y_1)$;
 
 - $\frac{z_1}{z_2}=\frac{(x_1, y_1)}{(x_2, y_2)}=\frac{(x_1, y_1)\times (x_2, -y_2)}{(x_2, y_2)\times (x_2, -y_2)}=\left(\frac{1}{x_2^2+y_2^2}, 0\right)\left[(x_1, y_1)\times (x_2, -y_2)\right]$
+
+## Why complex numbers
+
+## Back to the convention
 
 
 # Other Stuff
