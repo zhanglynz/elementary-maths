@@ -161,7 +161,7 @@ x = 1 + \sqrt{2}\ \hbox{or}\ x = 1 - \sqrt{2}.
 $$
 Since $x$ must be positive, we only keep $x=1+\sqrt{2}$.
 
-### Chichens and rabbits problem {-}
+### Chickens and rabbits problem {-}
 
 Chickens and rabbits are kept in the same cage. Someone has done the counting and provided the information: there are 66 heads and 216 feet in the cage. How many chickens and rabbits, respectively, are there in the cage?
 
@@ -564,6 +564,12 @@ Given any two complex numbers, $z_1=(x_1, y_1)$ and $z_2=(x_2, y_2)$:
 - $\frac{z_1}{z_2}=\frac{(x_1, y_1)}{(x_2, y_2)}=\frac{(x_1, y_1)\times (x_2, -y_2)}{(x_2, y_2)\times (x_2, -y_2)}=\left(\frac{1}{x_2^2+y_2^2}, 0\right)\left[(x_1, y_1)\times (x_2, -y_2)\right]$
 
 ## Why complex numbers
+
+The equation $x^2+1=0$ has no solution. However, if we translate this equation into 2-D, we have 
+$$
+z^2 + (1, 0) = (0, 0),
+$$
+and it has solutions as $z=(0, 1)$ or $z=(0, -1)$. This is an obvious reason that we need complex numbers. Actually, it turns out complex numbers are so useful in studying waves (e.g. sound, light and electricity). If you study maths at a university, it is very likely you will learn Fourier analysis, where complex numbers are the fundamental building blocks.
 
 ## Back to the convention
 
