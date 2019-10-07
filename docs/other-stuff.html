@@ -25,7 +25,7 @@
 <meta name="author" content="Lingyun Zhang">
 
 
-<meta name="date" content="2019-08-25">
+<meta name="date" content="2019-10-07">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -97,9 +97,15 @@
 <li class="chapter" data-level="4.4" data-path="complex-numbers.html"><a href="complex-numbers.html#back-to-the-convention"><i class="fa fa-check"></i><b>4.4</b> Back to the convention</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="other-stuff.html"><a href="other-stuff.html"><i class="fa fa-check"></i><b>5</b> Other Stuff</a><ul>
-<li class="chapter" data-level="5.1" data-path="other-stuff.html"><a href="other-stuff.html#interesting-number-series"><i class="fa fa-check"></i><b>5.1</b> Interesting Number Series</a></li>
+<li class="chapter" data-level="5.1" data-path="other-stuff.html"><a href="other-stuff.html#interesting-number-series"><i class="fa fa-check"></i><b>5.1</b> Interesting Number Series</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="other-stuff.html"><a href="other-stuff.html#three-integer-sequences"><i class="fa fa-check"></i><b>5.1.1</b> Three integer sequences</a></li>
+<li class="chapter" data-level="5.1.2" data-path="other-stuff.html"><a href="other-stuff.html#arithmetic-sequences"><i class="fa fa-check"></i><b>5.1.2</b> Arithmetic sequences</a></li>
+<li class="chapter" data-level="5.1.3" data-path="other-stuff.html"><a href="other-stuff.html#geometric-sequences"><i class="fa fa-check"></i><b>5.1.3</b> Geometric sequences</a></li>
+</ul></li>
 <li class="chapter" data-level="5.2" data-path="other-stuff.html"><a href="other-stuff.html#serious-inequlities"><i class="fa fa-check"></i><b>5.2</b> Serious Inequlities</a><ul>
 <li class="chapter" data-level="5.2.1" data-path="other-stuff.html"><a href="other-stuff.html#average-is-between-the-min-and-max"><i class="fa fa-check"></i><b>5.2.1</b> Average is Between the Min and Max</a></li>
+<li class="chapter" data-level="5.2.2" data-path="other-stuff.html"><a href="other-stuff.html#cauchy-schwarz-inequality"><i class="fa fa-check"></i><b>5.2.2</b> Cauchy-Schwarz inequality</a></li>
+<li class="chapter" data-level="5.2.3" data-path="other-stuff.html"><a href="other-stuff.html#relations-among-four-means"><i class="fa fa-check"></i><b>5.2.3</b> Relations among four means</a></li>
 </ul></li>
 <li class="chapter" data-level="5.3" data-path="other-stuff.html"><a href="other-stuff.html#hard-combinatorics"><i class="fa fa-check"></i><b>5.3</b> Hard Combinatorics</a></li>
 </ul></li>
@@ -124,6 +130,38 @@
 <h1><span class="header-section-number">5</span> Other Stuff</h1>
 <div id="interesting-number-series" class="section level2">
 <h2><span class="header-section-number">5.1</span> Interesting Number Series</h2>
+<div id="three-integer-sequences" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> Three integer sequences</h3>
+<p>We consider the following three integer sequences</p>
+<p><strong>Sequence 1:</strong> <span class="math inline">\(1, 2, 3, \ldots, n, \ldots,\)</span></p>
+<p><strong>Sequence 2:</strong> <span class="math inline">\(1^2, 2^2, 3^2, \ldots, n^2, \ldots,\)</span></p>
+<p><strong>Sequence 3:</strong> <span class="math inline">\(1^3, 2^3, 3^3, \ldots, n^3, \ldots,\)</span></p>
+Let <span class="math inline">\(S_n^{(k)}\)</span> be the sum of the first <span class="math inline">\(n\)</span> terms of the <span class="math inline">\(k\)</span>th sequence in the above. Then,
+<span class="math display" id="eq:sn3" id="eq:sn2" id="eq:sn1">\[\begin{align}
+S_n^{(1)}&amp;=\frac{n(n+1)}{2}, \tag{5.1}\\
+S_n^{(2)}&amp;=\frac{n(n+1)(2n+1)}{6}, \tag{5.2}\\
+S_n^{(3)}&amp;= \left(S_n^{(1)}\right)^2. \tag{5.3}\\
+\end{align}\]</span>
+<p><strong>Proof of <a href="other-stuff.html#eq:sn1">(5.1)</a></strong>. We have <span class="math display">\[2S_n^{(1)}=[1+2+\cdots+(n-1)+n] +[n+(n-1)+\cdots+2+1]=n(n+1).\]</span> Thus, <span class="math display">\[S_n^{(1)}=\frac{n(n+1)}{2}.\]</span></p>
+<strong>Proof of <a href="other-stuff.html#eq:sn2">(5.2)</a></strong>. We use mathematical induction method. <span class="math display">\[
+S_1^{(2)}=1^2=\frac{1\times (1+1)\times (2\times 1+1)}{6},
+\]</span> so, <a href="other-stuff.html#eq:sn2">(5.2)</a> holds when <span class="math inline">\(n=1\)</span>. Suppose that <a href="other-stuff.html#eq:sn2">(5.2)</a> holds when <span class="math inline">\(n=m\)</span>, where <span class="math inline">\(m\ge 1\)</span>, and now we show that <a href="other-stuff.html#eq:sn2">(5.2)</a> holds when <span class="math inline">\(n=m+1\)</span>. We have
+<span class="math display">\[\begin{align}
+S_{m+1}^{(2)}&amp;=S_m^{(2)} + (m+1)^2\notag\\
+&amp;=\frac{m(m+1)(2m+1)}{6} + (m+1)^2\notag\\
+&amp;=\frac{(m+1)[m(2m+1)+6(m+1)]}{6}\notag\\
+&amp;=\frac{(m+1)(2m^2+7m+6)}{6}\notag\\
+&amp;=\frac{(m+1)(m+2)(2m+3)}{6},\notag
+\end{align}\]</span>
+<p>which completes the proof.</p>
+<p><strong>Proof of <a href="other-stuff.html#eq:sn3">(5.3)</a></strong>. We leave this proof for readers.</p>
+</div>
+<div id="arithmetic-sequences" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> Arithmetic sequences</h3>
+</div>
+<div id="geometric-sequences" class="section level3">
+<h3><span class="header-section-number">5.1.3</span> Geometric sequences</h3>
+</div>
 </div>
 <div id="serious-inequlities" class="section level2">
 <h2><span class="header-section-number">5.2</span> Serious Inequlities</h2>
@@ -150,6 +188,37 @@ m=\sum_{i=1}^n mw_i\le \sum_{i=1}^n w_ix_i.
 \]</span></p>
 <p><strong>Exercise</strong> (kind of challenging). Let <span class="math inline">\(x_1, x_2, \ldots, x_n\)</span> be <span class="math inline">\(n\)</span> arbitrary positive numbers; let <span class="math inline">\(y_1, y_2, \ldots, y_n\)</span> be another <span class="math inline">\(n\)</span> arbitrary positive numbers. Show that <span class="math display">\[
 \hbox{min}\{x_1/y_1, x_2/y_2, \ldots, x_n/y_n\}\le \frac{\sum_{i=1}^n x_i}{\sum_{i=1}^n y_i} \le \hbox{max}\{x_1/y_1, x_2/y_2, \ldots, x_n/y_n\}.
+\]</span></p>
+</div>
+<div id="cauchy-schwarz-inequality" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> Cauchy-Schwarz inequality</h3>
+Let <span class="math inline">\(\{a_1, \ldots, a_n\}\)</span> and <span class="math inline">\(\{b_1, \ldots, b_n\}\)</span> be two sets of arbitrary <span class="math inline">\(n\)</span> real numbers, where <span class="math inline">\(n\)</span> is a positive integer. Then
+<span class="math display" id="eq:c-s">\[\begin{equation}
+\left(\sum_{i=1}^n a_ib_i\right)^2\le \sum_{i=1}^n a_i^2\sum_{i=1}^n b_i^2. \tag{5.4}
+\end{equation}\]</span>
+<p><strong>Proof:</strong> Let <span class="math inline">\(\lambda\)</span> be a symbol. It is always true that <span class="math display">\[
+\sum_{i=1}^n(a_i\lambda - b_i)^2\ge 0,
+\]</span> that is, <span class="math display">\[
+\sum_{i=1}^n a_i^2\lambda^2-2\sum_{i=1}^n a_ib_i\lambda+\sum_{i=1}^n b_i^2\ge 0.
+\]</span> If <span class="math inline">\(\sum_{i=1}^n a_i^2=0\)</span>, then <a href="other-stuff.html#eq:c-s">(5.4)</a> holds. Now, we assume <span class="math inline">\(\sum_{i=1}^n a_i^2\neq 0\)</span>, Then, the discriminant <span class="math display">\[
+\Delta=\left(-2\sum_{i=1}^n a_ib_i\right)^2-4\sum_{i=1}^n a_i^2\sum_{i=1}^n b_i^2\le 0,
+\]</span> which implies that <span class="math display">\[
+\left(\sum_{i=1}^n a_ib_i\right)^2\le \sum_{i=1}^n a_i^2\sum_{i=1}^n b_i^2,
+\]</span> and the equality holds if and only if <span class="math display">\[
+a_i\lambda-b_i=0,\ \text{for}\ i=1, \ldots, n,
+\]</span> which in the language of <em>linear algebra</em> tells that the two vectors <span class="math inline">\((a_1, \ldots, a_n)\)</span> and <span class="math inline">\((b_1, \ldots, b_n)\)</span> are <em>linearly dependent</em>.</p>
+</div>
+<div id="relations-among-four-means" class="section level3">
+<h3><span class="header-section-number">5.2.3</span> Relations among four means</h3>
+<p>Let <span class="math inline">\(x_1, x_2, \ldots, x_n\)</span> be <span class="math inline">\(n\)</span> positive real numbers. We can define</p>
+<ul>
+<li><strong>arithmetic mean:</strong> <span class="math inline">\(\mu_A=\sum_{i=1}^n x_i/n\)</span></li>
+<li><strong>harmonic mean:</strong> <span class="math inline">\(\mu_H=n/\sum_{i=1}^n x_i^{-1}\)</span></li>
+<li><strong>geometric mean:</strong> <span class="math inline">\(\mu_G=\left(\prod_{i=1}^n x_i\right)^{1/n}\)</span></li>
+<li><strong>square mean:</strong> <span class="math inline">\(\mu_S=\sqrt{\sum_{i=1}^n x_i^2/n}\)</span></li>
+</ul>
+<p>The following holds <span class="math display">\[
+\mu_H\le \mu_G\le \mu_A \le \mu_S.
 \]</span></p>
 </div>
 </div>

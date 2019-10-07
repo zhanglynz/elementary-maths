@@ -578,6 +578,50 @@ and it has solutions as $z=(0, 1)$ or $z=(0, -1)$. This is an obvious reason tha
 
 ## Interesting Number Series
 
+### Three integer sequences
+
+We consider the following three integer sequences
+
+**Sequence 1:** $1, 2, 3, \ldots, n, \ldots,$
+
+**Sequence 2:** $1^2, 2^2, 3^2, \ldots, n^2, \ldots,$
+
+**Sequence 3:** $1^3, 2^3, 3^3, \ldots, n^3, \ldots,$
+
+Let $S_n^{(k)}$ be the sum of the first $n$ terms of the $k$th sequence in the above. Then,
+\begin{align}
+S_n^{(1)}&=\frac{n(n+1)}{2}, (\#eq:sn1)\\
+S_n^{(2)}&=\frac{n(n+1)(2n+1)}{6}, (\#eq:sn2)\\
+S_n^{(3)}&= \left(S_n^{(1)}\right)^2. (\#eq:sn3)\\
+\end{align}
+
+**Proof of \@ref(eq:sn1)**. We have
+$$2S_n^{(1)}=[1+2+\cdots+(n-1)+n] +[n+(n-1)+\cdots+2+1]=n(n+1).$$ 
+Thus,
+$$S_n^{(1)}=\frac{n(n+1)}{2}.$$
+
+**Proof of \@ref(eq:sn2)**. We use mathematical induction method.
+$$
+S_1^{(2)}=1^2=\frac{1\times (1+1)\times (2\times 1+1)}{6},
+$$
+so, \@ref(eq:sn2) holds when $n=1$. Suppose that \@ref(eq:sn2) holds when $n=m$, where $m\ge 1$, and now we show that \@ref(eq:sn2) holds when $n=m+1$. We have
+\begin{align}
+S_{m+1}^{(2)}&=S_m^{(2)} + (m+1)^2\notag\\
+&=\frac{m(m+1)(2m+1)}{6} + (m+1)^2\notag\\
+&=\frac{(m+1)[m(2m+1)+6(m+1)]}{6}\notag\\
+&=\frac{(m+1)(2m^2+7m+6)}{6}\notag\\
+&=\frac{(m+1)(m+2)(2m+3)}{6},\notag
+\end{align}
+which completes the proof.
+
+**Proof of \@ref(eq:sn3)**. We leave this proof for readers.
+
+### Arithmetic sequences
+
+### Geometric sequences
+
+
+
 ## Serious Inequlities
 
 ### Average is Between the Min and Max
@@ -616,6 +660,50 @@ $$
 **Exercise** (kind of challenging). Let $x_1, x_2, \ldots, x_n$ be $n$ arbitrary positive numbers; let $y_1, y_2, \ldots, y_n$ be another $n$ arbitrary positive numbers. Show that
 $$
 \hbox{min}\{x_1/y_1, x_2/y_2, \ldots, x_n/y_n\}\le \frac{\sum_{i=1}^n x_i}{\sum_{i=1}^n y_i} \le \hbox{max}\{x_1/y_1, x_2/y_2, \ldots, x_n/y_n\}.
+$$
+
+### Cauchy-Schwarz inequality
+
+Let $\{a_1, \ldots, a_n\}$ and $\{b_1, \ldots, b_n\}$ be two sets of arbitrary $n$ real numbers, where $n$ is a positive integer. Then
+\begin{equation}
+\left(\sum_{i=1}^n a_ib_i\right)^2\le \sum_{i=1}^n a_i^2\sum_{i=1}^n b_i^2. (\#eq:c-s)
+\end{equation}
+
+**Proof:** Let $\lambda$ be a symbol. It is always true that
+$$
+\sum_{i=1}^n(a_i\lambda - b_i)^2\ge 0,
+$$
+that is,
+$$
+\sum_{i=1}^n a_i^2\lambda^2-2\sum_{i=1}^n a_ib_i\lambda+\sum_{i=1}^n b_i^2\ge 0.
+$$
+If $\sum_{i=1}^n a_i^2=0$, then \@ref(eq:c-s) holds. Now, we assume $\sum_{i=1}^n a_i^2\neq 0$, Then, the discriminant
+$$
+\Delta=\left(-2\sum_{i=1}^n a_ib_i\right)^2-4\sum_{i=1}^n a_i^2\sum_{i=1}^n b_i^2\le 0,
+$$
+which implies that
+$$
+\left(\sum_{i=1}^n a_ib_i\right)^2\le \sum_{i=1}^n a_i^2\sum_{i=1}^n b_i^2,
+$$
+and the equality holds if and only if
+$$
+a_i\lambda-b_i=0,\ \text{for}\ i=1, \ldots, n,
+$$
+which in the language of *linear algebra* tells that the two vectors $(a_1, \ldots, a_n)$ and $(b_1, \ldots, b_n)$ are *linearly dependent*.
+
+
+### Relations among four means
+
+Let $x_1, x_2, \ldots, x_n$ be $n$ positive real numbers. We can define
+
+- **arithmetic mean:** $\mu_A=\sum_{i=1}^n x_i/n$
+- **harmonic mean:** $\mu_H=n/\sum_{i=1}^n x_i^{-1}$
+- **geometric mean:** $\mu_G=\left(\prod_{i=1}^n x_i\right)^{1/n}$
+- **square mean:** $\mu_S=\sqrt{\sum_{i=1}^n x_i^2/n}$
+
+The following holds
+$$
+\mu_H\le \mu_G\le \mu_A \le \mu_S.
 $$
 
 
