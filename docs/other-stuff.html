@@ -25,7 +25,7 @@
 <meta name="author" content="Lingyun Zhang">
 
 
-<meta name="date" content="2019-10-07">
+<meta name="date" content="2019-10-08">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -220,6 +220,25 @@ a_i\lambda-b_i=0,\ \text{for}\ i=1, \ldots, n,
 <p>The following holds <span class="math display">\[
 \mu_H\le \mu_G\le \mu_A \le \mu_S.
 \]</span></p>
+<p><strong>Proof of <span class="math inline">\(\mu_G\le \mu_A\)</span></strong>. <span class="math display">\[
+\left(\prod_{i=1}^n x_i\right)^{1/n}\le \frac{\sum_{i=1}^n x_i}{n}\Leftrightarrow \frac{1}{n}\sum_{i=1}^n\ln x_i\le \ln\left(\frac{\sum_{i=1}^nx_i}{n}\right),
+\]</span> which can be proved by using the fact that <span class="math inline">\(y=-\ln x\)</span> is a <em>convex</em> function, and the Jensen Inequality: If <span class="math inline">\(f(x)\)</span> is a convex function, then <span class="math display">\[
+f\left(\sum_{i=1}^n \lambda_i x_i\right) \le \sum_{i=1}^n \lambda_i f(x_i),
+\]</span> where <span class="math inline">\(\sum_{i=1}^n \lambda_i=1\)</span> and <span class="math inline">\(\lambda_i&gt;0\)</span> for <span class="math inline">\(i=1, \ldots, n.\)</span></p>
+<p><strong>Proof of <span class="math inline">\(\mu_H\le \mu_G\)</span></strong>.</p>
+<p>Let <span class="math inline">\(u_i=x_i^{-1},\ \text{for}\ i=1, \ldots, n.\)</span> Then, <span class="math inline">\(\mu_H\le \mu_G\)</span> becomes <span class="math display">\[
+\frac{n}{\sum_{i=1}^n u_i}\le \frac{1}{\left(\prod_{i=1}^n u_i\right)^{1/n}},
+\]</span> which holds because as we just proved <span class="math display">\[
+\left(\prod_{i=1}^n u_i\right)^{1/n}\le \frac{\sum_{i=1}^n u_i}{n}
+\]</span></p>
+<p><strong>Proof of <span class="math inline">\(\mu_A\le \mu_S\)</span></strong>.</p>
+<p>Taking square on both sides of <span class="math inline">\(\mu_A\le \mu_S\)</span>, we have <span class="math display">\[
+\left(\frac{\sum_{i=1}^n x_i}{n}\right)^2\le \frac{\sum_{i=1}^n x_i^2}{n},
+\]</span> which can be simplified as <span class="math display">\[
+\left(\sum_{i=1}^n x_i\right)^2 \le n\sum_{i=1}^n x_i^2.
+\]</span> According to the Cauchy-Schwarz inequality, we have <span class="math display">\[
+\left(\sum_{i=1}^n x_i\right)^2=\left(\sum_{i=1}^n x_i\cdot 1\right)^2\le \sum_{i=1}^n x_i^2\sum_{i=1}^n 1^2=n\sum_{i=1}^n x_i^2,
+\]</span> which completes the proof.</p>
 </div>
 </div>
 <div id="hard-combinatorics" class="section level2">
