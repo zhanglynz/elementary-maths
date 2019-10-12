@@ -20,7 +20,7 @@ To be written.
 
 # Fun Algebra
 
-In my opinion, from **Algebra** we learn two things, namely, (i) how to set up equations, and (ii) how to solve equations. In school, they usually pay more attention to (ii), however, mastering (i)  is very important for real-life problem solving.
+In my opinion, from **Algebra** we learn two things, namely, (i) how to set up equations, and (ii) how to solve equations. In schools, they usually pay more attention to (ii), however, mastering (i)  is very important for real-life problem solving.
 
 When we want to set up equations, we actually translate the statement in a word problem into **algebraic expressions**. The key idea here is to use the letter $x$ to replace the *unknown* (of course, if there are two unknowns, we will use the letters $x$ and $y$).
 
@@ -61,7 +61,7 @@ NB: This is the so-called **quadratic formula**. To derive the formula, we need 
         - **sub-case 1:** $\alpha$ is an integer, then $x^\alpha=\underbrace{x\times x\times\cdots \times x}_{\text{repeat $\alpha$ times}}$;
         - **sub-case 2:** $\alpha=1/p$, where $p$ is a positive integer, then $x^\alpha$ is such a number $y$ that $y^p=x$;
         - **sub-case 3:** $\alpha=q/p$, where $p$ and $q$ are positive integers and they are co-prime, then $x^\alpha=x^{q/p}=\left(x^{1/p}\right)^q$;
-        - **sub-case 4:** $\alpha$ is an irrational number, then we can find a rational number $q/p$ such that $|q/p-\alpha|<10^{-100}$, and $x^{q/p}$ can be regarded as $x^\alpha$;
+        - **sub-case 4:** $\alpha$ is an irrational number, then we can find a rational number $q/p$ such that $|q/p-\alpha|<10^{-n}$ (e.g. $n=100$), and $x^{q/p}$ can be regarded as $x^\alpha$;
     - **Case 3:** $\alpha<0$, then $x^\alpha=\frac{1}{x^{-\alpha}}$.
         
     
