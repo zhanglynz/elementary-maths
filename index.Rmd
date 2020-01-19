@@ -63,6 +63,20 @@ NB: This is the so-called **quadratic formula**. To derive the formula, we need 
         - **sub-case 3:** $\alpha=q/p$, where $p$ and $q$ are positive integers and they are co-prime, then $x^\alpha=x^{q/p}=\left(x^{1/p}\right)^q$;
         - **sub-case 4:** $\alpha$ is an irrational number, then we can find a rational number $q/p$ such that $|q/p-\alpha|<10^{-n}$ (e.g. $n=100$), and $x^{q/p}$ can be regarded as $x^\alpha$;
     - **Case 3:** $\alpha<0$, then $x^\alpha=\frac{1}{x^{-\alpha}}$.
+    
+    It can be shown that
+\begin{align}
+x^{\alpha + \beta} & = x^\alpha x^\beta,\\
+x^{\alpha\beta} & = (x^\alpha)^\beta,\\
+x^\alpha =x^\beta\ & \hbox{is equivalent to}\ \alpha = \beta.
+\end{align}
+
+- The meanings of $\log_2 4$ and $\log_{10} 5$. Answer: $\log_2 4$ and $\log_{10} 5$ are two numbers.
+$\log_2 4$ is such a number $x$ such that $2^x=4$---easily we know $x=2$, so $\log_2 4=2$. $\log_{10} 5$ is such a number $x$ such that $10^x=5$---it's not easy to know what this $x$ exactly is, but we should know that $0<x<1$. The point that I want to make is this: For any $a>0$ and $a\neq 1$ and $b>0$, $\log_a b$ is the the solution to 
+$$
+a^x = b.
+$$
+See "Properties of log" in the next Section.
         
     
 
@@ -160,6 +174,63 @@ $$
 x = 1 + \sqrt{2}\ \hbox{or}\ x = 1 - \sqrt{2}.
 $$
 Since $x$ must be positive, we only keep $x=1+\sqrt{2}$.
+
+### The properties of log {-}
+
+\begin{align}
+\log_a b + \log_a c & = \log_a bc (\#eq:log1)\\
+\log_a b - \log_a c & = \log_a \frac{b}{c} (\#eq:log2)\\
+\log_a b^p & = p\log_a b (\#eq:log3)\\
+\log_a b & = \frac{\log_c b}{\log_c a} (\#eq:log4)
+\end{align}
+
+For proving the above properties, we will need the following
+\begin{align}
+x^{\alpha + \beta} & = x^\alpha x^\beta,\\
+x^{\alpha\beta} & = (x^\alpha)^\beta,\\
+x^\alpha =x^\beta\ & \hbox{is equivalent to}\ \alpha = \beta.
+\end{align}
+
+Proof of \@ref(eq:log1). We have
+$$
+a^{LHS}=a^{\log_a b}a^{\log_a c}=bc=a^{\log_a bc}=a^{RHS},
+$$
+thus, 
+$$
+LHS = RHS.
+$$
+
+Proof of \@ref(eq:log2). Since
+$$
+\log_a c + \log_a \frac{b}{c}=\log_a c\frac{b}{c}=\log_a b,
+$$
+we have 
+$$
+\log_a \frac{b}{c}=\log_a b - \log_a c.
+$$
+
+Proof of \@ref(eq:log3). We have
+$$
+a^{LHS}=b^p,
+$$
+and 
+$$
+a^{RHS}=(a^{\log_a b})^p=b^p.
+$$
+Thus,
+$$
+LHS=RHS.
+$$
+
+Proof of \@ref(eq:log4). We only need to show that
+$$
+\log_a b\log_c a = \log_c b.
+$$
+In fact,
+$$
+c^{\log_a b\log_c a}=(c^{\log_c a})^{\log_a b}=a^{\log_a b}=b=c^{\log_c b},
+$$
+which completes the proof.
 
 ### Chickens and rabbits problem {-}
 

@@ -25,7 +25,7 @@
 <meta name="author" content="Lingyun Zhang">
 
 
-<meta name="date" content="2019-10-12">
+<meta name="date" content="2020-01-19">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -70,6 +70,7 @@
 <li><a href="fun-algebra.html#why-is-0.99999...1-true">Why is <span class="math inline">\(0.99999...=1\)</span> true?</a></li>
 <li class="chapter" data-level="" data-path="fun-algebra.html"><a href="fun-algebra.html#the-quadratic-formula"><i class="fa fa-check"></i>The quadratic formula</a></li>
 <li class="chapter" data-level="" data-path="fun-algebra.html"><a href="fun-algebra.html#find-a-continued-fraction"><i class="fa fa-check"></i>Find a continued fraction</a></li>
+<li class="chapter" data-level="" data-path="fun-algebra.html"><a href="fun-algebra.html#the-properties-of-log"><i class="fa fa-check"></i>The properties of log</a></li>
 <li class="chapter" data-level="" data-path="fun-algebra.html"><a href="fun-algebra.html#chickens-and-rabbits-problem"><i class="fa fa-check"></i>Chickens and rabbits problem</a></li>
 </ul></li>
 </ul></li>
@@ -158,7 +159,16 @@ x = \frac{-b \pm \sqrt{b^2-4ac}}{2a},\ \hbox{provided}\ b^2-4ac \ge 0.
 <li><strong>sub-case 4:</strong> <span class="math inline">\(\alpha\)</span> is an irrational number, then we can find a rational number <span class="math inline">\(q/p\)</span> such that <span class="math inline">\(|q/p-\alpha|&lt;10^{-n}\)</span> (e.g. <span class="math inline">\(n=100\)</span>), and <span class="math inline">\(x^{q/p}\)</span> can be regarded as <span class="math inline">\(x^\alpha\)</span>;</li>
 </ul></li>
 <li><strong>Case 3:</strong> <span class="math inline">\(\alpha&lt;0\)</span>, then <span class="math inline">\(x^\alpha=\frac{1}{x^{-\alpha}}\)</span>.</li>
-</ul></li>
+</ul>
+It can be shown that
+<span class="math display">\[\begin{align}
+x^{\alpha + \beta} &amp; = x^\alpha x^\beta,\\
+x^{\alpha\beta} &amp; = (x^\alpha)^\beta,\\
+x^\alpha =x^\beta\ &amp; \hbox{is equivalent to}\ \alpha = \beta.
+\end{align}\]</span></li>
+<li><p>The meanings of <span class="math inline">\(\log_2 4\)</span> and <span class="math inline">\(\log_{10} 5\)</span>. Answer: <span class="math inline">\(\log_2 4\)</span> and <span class="math inline">\(\log_{10} 5\)</span> are two numbers. <span class="math inline">\(\log_2 4\)</span> is such a number <span class="math inline">\(x\)</span> such that <span class="math inline">\(2^x=4\)</span>—easily we know <span class="math inline">\(x=2\)</span>, so <span class="math inline">\(\log_2 4=2\)</span>. <span class="math inline">\(\log_{10} 5\)</span> is such a number <span class="math inline">\(x\)</span> such that <span class="math inline">\(10^x=5\)</span>—it’s not easy to know what this <span class="math inline">\(x\)</span> exactly is, but we should know that <span class="math inline">\(0&lt;x&lt;1\)</span>. The point that I want to make is this: For any <span class="math inline">\(a&gt;0\)</span> and <span class="math inline">\(a\neq 1\)</span> and <span class="math inline">\(b&gt;0\)</span>, <span class="math inline">\(\log_a b\)</span> is the the solution to <span class="math display">\[
+a^x = b.
+\]</span> See “Properties of log” in the next Section.</p></li>
 </ul>
 </div>
 <div id="examples" class="section level2">
@@ -226,6 +236,43 @@ ax^2+bx+c=0,
 <p>Solving <a href="fun-algebra.html#eq:c-fr-eq">(1.1)</a>, we get <span class="math display">\[
 x = 1 + \sqrt{2}\ \hbox{or}\ x = 1 - \sqrt{2}.
 \]</span> Since <span class="math inline">\(x\)</span> must be positive, we only keep <span class="math inline">\(x=1+\sqrt{2}\)</span>.</p>
+</div>
+<div id="the-properties-of-log" class="section level3 unnumbered">
+<h3>The properties of log</h3>
+<span class="math display" id="eq:log4" id="eq:log3" id="eq:log2" id="eq:log1">\[\begin{align}
+\log_a b + \log_a c &amp; = \log_a bc \tag{1.2}\\
+\log_a b - \log_a c &amp; = \log_a \frac{b}{c} \tag{1.3}\\
+\log_a b^p &amp; = p\log_a b \tag{1.4}\\
+\log_a b &amp; = \frac{\log_c b}{\log_c a} \tag{1.5}
+\end{align}\]</span>
+For proving the above properties, we will need the following
+<span class="math display">\[\begin{align}
+x^{\alpha + \beta} &amp; = x^\alpha x^\beta,\\
+x^{\alpha\beta} &amp; = (x^\alpha)^\beta,\\
+x^\alpha =x^\beta\ &amp; \hbox{is equivalent to}\ \alpha = \beta.
+\end{align}\]</span>
+<p>Proof of <a href="fun-algebra.html#eq:log1">(1.2)</a>. We have <span class="math display">\[
+a^{LHS}=a^{\log_a b}a^{\log_a c}=bc=a^{\log_a bc}=a^{RHS},
+\]</span> thus, <span class="math display">\[
+LHS = RHS.
+\]</span></p>
+<p>Proof of <a href="fun-algebra.html#eq:log2">(1.3)</a>. Since <span class="math display">\[
+\log_a c + \log_a \frac{b}{c}=\log_a c\frac{b}{c}=\log_a b,
+\]</span> we have <span class="math display">\[
+\log_a \frac{b}{c}=\log_a b - \log_a c.
+\]</span></p>
+<p>Proof of <a href="fun-algebra.html#eq:log3">(1.4)</a>. We have <span class="math display">\[
+a^{LHS}=b^p,
+\]</span> and <span class="math display">\[
+a^{RHS}=(a^{\log_a b})^p=b^p.
+\]</span> Thus, <span class="math display">\[
+LHS=RHS.
+\]</span></p>
+<p>Proof of <a href="fun-algebra.html#eq:log4">(1.5)</a>. We only need to show that <span class="math display">\[
+\log_a b\log_c a = \log_c b.
+\]</span> In fact, <span class="math display">\[
+c^{\log_a b\log_c a}=(c^{\log_c a})^{\log_a b}=a^{\log_a b}=b=c^{\log_c b},
+\]</span> which completes the proof.</p>
 </div>
 <div id="chickens-and-rabbits-problem" class="section level3 unnumbered">
 <h3>Chickens and rabbits problem</h3>
