@@ -25,7 +25,7 @@
 <meta name="author" content="Lingyun Zhang">
 
 
-<meta name="date" content="2020-01-19">
+<meta name="date" content="2020-02-06">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -69,6 +69,7 @@
 <li class="chapter" data-level="" data-path="fun-algebra.html"><a href="fun-algebra.html#how-much-money-can-you-save"><i class="fa fa-check"></i>How much money can you save?</a></li>
 <li><a href="fun-algebra.html#why-is-0.99999...1-true">Why is <span class="math inline">\(0.99999...=1\)</span> true?</a></li>
 <li class="chapter" data-level="" data-path="fun-algebra.html"><a href="fun-algebra.html#the-quadratic-formula"><i class="fa fa-check"></i>The quadratic formula</a></li>
+<li><a href="fun-algebra.html#solving-x3pxq0">Solving <span class="math inline">\(x^3+px+q=0\)</span></a></li>
 <li class="chapter" data-level="" data-path="fun-algebra.html"><a href="fun-algebra.html#find-a-continued-fraction"><i class="fa fa-check"></i>Find a continued fraction</a></li>
 <li class="chapter" data-level="" data-path="fun-algebra.html"><a href="fun-algebra.html#the-properties-of-log"><i class="fa fa-check"></i>The properties of log</a></li>
 <li class="chapter" data-level="" data-path="fun-algebra.html"><a href="fun-algebra.html#chickens-and-rabbits-problem"><i class="fa fa-check"></i>Chickens and rabbits problem</a></li>
@@ -224,6 +225,61 @@ ax^2+bx+c=0,
 \end{array}
 \]</span></p>
 </div>
+<div id="solving-x3pxq0" class="section level3 unnumbered">
+<h3>Solving <span class="math inline">\(x^3+px+q=0\)</span></h3>
+We want to solve
+<span class="math display" id="eq:power3">\[\begin{equation}
+x^3 +px +q =0,\tag{1.1}
+\end{equation}\]</span>
+where <span class="math inline">\(p\)</span> and <span class="math inline">\(q\)</span> are real numbers. The trick is to set the solution in the format
+<span class="math display" id="eq:trick">\[\begin{equation}
+x=\sqrt[3]{a+b} + \sqrt[3]{a-b}.
+\tag{1.2}
+\end{equation}\]</span>
+Equation <a href="fun-algebra.html#eq:trick">(1.2)</a> implies that
+<span class="math display" id="eq:xpower3">\[\begin{equation}
+x^3=2a+3\sqrt[3]{a^2-b^2}x.
+\tag{1.3}
+\end{equation}\]</span>
+Plugging <a href="fun-algebra.html#eq:xpower3">(1.3)</a> into <a href="fun-algebra.html#eq:power3">(1.1)</a>, we have
+<span class="math display" id="eq:plugeq">\[\begin{equation}
+2a+3\sqrt[3]{a^2-b^2}x+px+q=0.
+\tag{1.4}
+\end{equation}\]</span>
+Remember that the task is to find <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>. So, using <a href="fun-algebra.html#eq:plugeq">(1.4)</a>, we have
+<span class="math display" id="eq:aq">\[\begin{equation}
+2a+q=0,
+\tag{1.5}
+\end{equation}\]</span>
+and
+<span class="math display" id="eq:bpart">\[\begin{equation}
+3\sqrt[3]{a^2-b^2}+p=0.
+\tag{1.6}
+\end{equation}\]</span>
+From <a href="fun-algebra.html#eq:aq">(1.5)</a>, we have <span class="math display">\[
+a=-\frac{q}{2};
+\]</span> from <a href="fun-algebra.html#eq:bpart">(1.6)</a>, we have
+<span class="math display" id="eq:bresult">\[\begin{equation}
+b=\sqrt{a^2+\frac{p^3}{27}}=\sqrt{\frac{q^2}{4}+\frac{p^3}{27}}
+\tag{1.7}
+\end{equation}\]</span>
+<p><strong>Remarks:</strong></p>
+<ol style="list-style-type: decimal">
+<li>To have <a href="fun-algebra.html#eq:bresult">(1.7)</a>, we must assume that <span class="math display">\[
+\frac{q^2}{4}+\frac{p^3}{27}\ge 0.
+\]</span></li>
+<li>If the assumption does not hold, then <span class="math display">\[
+b=\sqrt{-\left(\frac{q^2}{4}+\frac{p^3}{27}\right)}i,
+\]</span> where <span class="math inline">\(i\)</span> is the imaginary unit <span class="math inline">\(\sqrt{-1}\)</span>. In this case, even though <span class="math inline">\(b\)</span> is a complex number, the solution <span class="math display">\[
+z=\sqrt[3]{a+b} + \sqrt[3]{a-b}
+\]</span> is still real. In fact, it can be shown that <span class="math display">\[
+x=2(a^2+b^2_*)^{1/6}\cos\left(\frac{1}{3}\arctan\frac{b_*}{a}\right),
+\]</span> where <span class="math display">\[
+b_*=\frac{b}{i}=\sqrt{-\left(\frac{q^2}{4}+\frac{p^3}{27}\right)}.
+\]</span></li>
+<li>The trick in <a href="fun-algebra.html#eq:trick">(1.2)</a> was known probably more than 400 years ago.</li>
+</ol>
+</div>
 <div id="find-a-continued-fraction" class="section level3 unnumbered">
 <h3>Find a continued fraction</h3>
 <p>What is the following number <span class="math display">\[
@@ -231,19 +287,19 @@ ax^2+bx+c=0,
 \]</span> This is an interesting problem. I only know one way to solve it—using Algebra.</p>
 <strong>Solution.</strong> Let <span class="math inline">\(x\)</span> be the number. We have
 <span class="math display" id="eq:c-fr-eq">\[\begin{equation}
-2 + \frac{1}{x} = x, \tag{1.1}
+2 + \frac{1}{x} = x, \tag{1.8}
 \end{equation}\]</span>
-<p>Solving <a href="fun-algebra.html#eq:c-fr-eq">(1.1)</a>, we get <span class="math display">\[
+<p>Solving <a href="fun-algebra.html#eq:c-fr-eq">(1.8)</a>, we get <span class="math display">\[
 x = 1 + \sqrt{2}\ \hbox{or}\ x = 1 - \sqrt{2}.
 \]</span> Since <span class="math inline">\(x\)</span> must be positive, we only keep <span class="math inline">\(x=1+\sqrt{2}\)</span>.</p>
 </div>
 <div id="the-properties-of-log" class="section level3 unnumbered">
 <h3>The properties of log</h3>
 <span class="math display" id="eq:log4" id="eq:log3" id="eq:log2" id="eq:log1">\[\begin{align}
-\log_a b + \log_a c &amp; = \log_a bc \tag{1.2}\\
-\log_a b - \log_a c &amp; = \log_a \frac{b}{c} \tag{1.3}\\
-\log_a b^p &amp; = p\log_a b \tag{1.4}\\
-\log_a b &amp; = \frac{\log_c b}{\log_c a} \tag{1.5}
+\log_a b + \log_a c &amp; = \log_a bc \tag{1.9}\\
+\log_a b - \log_a c &amp; = \log_a \frac{b}{c} \tag{1.10}\\
+\log_a b^p &amp; = p\log_a b \tag{1.11}\\
+\log_a b &amp; = \frac{\log_c b}{\log_c a} \tag{1.12}
 \end{align}\]</span>
 For proving the above properties, we will need the following
 <span class="math display">\[\begin{align}
@@ -251,24 +307,24 @@ x^{\alpha + \beta} &amp; = x^\alpha x^\beta,\\
 x^{\alpha\beta} &amp; = (x^\alpha)^\beta,\\
 x^\alpha =x^\beta\ &amp; \hbox{is equivalent to}\ \alpha = \beta.
 \end{align}\]</span>
-<p>Proof of <a href="fun-algebra.html#eq:log1">(1.2)</a>. We have <span class="math display">\[
+<p>Proof of <a href="fun-algebra.html#eq:log1">(1.9)</a>. We have <span class="math display">\[
 a^{LHS}=a^{\log_a b}a^{\log_a c}=bc=a^{\log_a bc}=a^{RHS},
 \]</span> thus, <span class="math display">\[
 LHS = RHS.
 \]</span></p>
-<p>Proof of <a href="fun-algebra.html#eq:log2">(1.3)</a>. Since <span class="math display">\[
+<p>Proof of <a href="fun-algebra.html#eq:log2">(1.10)</a>. Since <span class="math display">\[
 \log_a c + \log_a \frac{b}{c}=\log_a c\frac{b}{c}=\log_a b,
 \]</span> we have <span class="math display">\[
 \log_a \frac{b}{c}=\log_a b - \log_a c.
 \]</span></p>
-<p>Proof of <a href="fun-algebra.html#eq:log3">(1.4)</a>. We have <span class="math display">\[
+<p>Proof of <a href="fun-algebra.html#eq:log3">(1.11)</a>. We have <span class="math display">\[
 a^{LHS}=b^p,
 \]</span> and <span class="math display">\[
 a^{RHS}=(a^{\log_a b})^p=b^p.
 \]</span> Thus, <span class="math display">\[
 LHS=RHS.
 \]</span></p>
-<p>Proof of <a href="fun-algebra.html#eq:log4">(1.5)</a>. We only need to show that <span class="math display">\[
+<p>Proof of <a href="fun-algebra.html#eq:log4">(1.12)</a>. We only need to show that <span class="math display">\[
 \log_a b\log_c a = \log_c b.
 \]</span> In fact, <span class="math display">\[
 c^{\log_a b\log_c a}=(c^{\log_c a})^{\log_a b}=a^{\log_a b}=b=c^{\log_c b},

@@ -157,6 +157,73 @@ $$
 \end{array}
 $$
 
+### Solving $x^3+px+q=0$ {-}
+
+We want to solve 
+\begin{equation}
+x^3 +px +q =0,(\#eq:power3)
+\end{equation}
+where $p$ and $q$ are real numbers. The trick is to set the solution in the format 
+\begin{equation}
+x=\sqrt[3]{a+b} + \sqrt[3]{a-b}.
+(\#eq:trick)
+\end{equation}
+Equation \@ref(eq:trick) implies that
+\begin{equation}
+x^3=2a+3\sqrt[3]{a^2-b^2}x.
+(\#eq:xpower3)
+\end{equation}
+Plugging \@ref(eq:xpower3) into \@ref(eq:power3), we have
+\begin{equation}
+2a+3\sqrt[3]{a^2-b^2}x+px+q=0.
+(\#eq:plugeq)
+\end{equation}
+Remember that the task is to find $a$ and $b$. So, using
+\@ref(eq:plugeq), we have
+\begin{equation}
+2a+q=0,
+(\#eq:aq)
+\end{equation}
+and
+\begin{equation}
+3\sqrt[3]{a^2-b^2}+p=0.
+(\#eq:bpart)
+\end{equation}
+From \@ref(eq:aq), we have
+$$
+a=-\frac{q}{2};
+$$
+from \@ref(eq:bpart), we have
+\begin{equation}
+b=\sqrt{a^2+\frac{p^3}{27}}=\sqrt{\frac{q^2}{4}+\frac{p^3}{27}}
+(\#eq:bresult)
+\end{equation}
+
+
+**Remarks:**
+
+1. To have \@ref(eq:bresult), we must assume that
+$$
+\frac{q^2}{4}+\frac{p^3}{27}\ge 0.
+$$
+2. If the assumption does not hold, then
+$$
+b=\sqrt{-\left(\frac{q^2}{4}+\frac{p^3}{27}\right)}i,
+$$
+where $i$ is the imaginary unit $\sqrt{-1}$. In this case, even though $b$ is a complex number, the solution
+$$
+z=\sqrt[3]{a+b} + \sqrt[3]{a-b}
+$$
+is still real. In fact, it can be shown that
+$$
+x=2(a^2+b^2_*)^{1/6}\cos\left(\frac{1}{3}\arctan\frac{b_*}{a}\right),
+$$
+where
+$$
+b_*=\frac{b}{i}=\sqrt{-\left(\frac{q^2}{4}+\frac{p^3}{27}\right)}.
+$$
+3. The trick in \@ref(eq:trick) was known probably more than 400 years ago.
+
 ### Find a continued fraction {-}
 
 What is the following number
