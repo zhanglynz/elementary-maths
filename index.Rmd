@@ -711,6 +711,72 @@ and it has solutions as $z=(0, 1)$ or $z=(0, -1)$. This is an obvious reason tha
 
 ## Back to the convention
 
+## The fundamental theorem of algebra
+
+For any polynomial
+$$
+p(z) = a_n z^n + a_{n-1}z^{n-1}+\cdots+a_1 z + a_o,
+$$
+where $a_{n},\ a_{n-1},\ \ldots,\ a_1,\ a_0$ are complex numbers, $n$ is a positive integer and $a_n\neq 0$, it can be shown that 
+$$
+p(z)=a_n(z-z_1)(z-z_2)\cdots (z-z_{n-1})(z-z_n).
+$$
+So, $p(z)=0$ has $n$ roots. This is the so-called  **the fundamental theorem of algebra**.
+
+**Remarks:**
+
+1. The proof of the fundamental theorem of algebra is given in *complex analysis*, which is taught in universities.
+
+2. The sum of the $n$ roots
+\begin{equation}
+\sum_{i=1}^n z_i = -\frac{a_{n-1}}{a_n},
+(\#eq:sumofroots)
+\end{equation}
+and the product of the $n$ roots
+\begin{equation}
+\prod_{i=1}^n z_i = (-1)^n\frac{a_0}{a_n}.
+(\#eq:prodofroots)
+\end{equation}
+Proof of \@ref(eq:sumofroots):
+\begin{align}
+p(z)=& a_n(z-z_1)(z-z_2)\cdots(z-z_n)\\
+=&a_n z^n - a_n\sum_{i=1}^n z_i z^{n-1}+\cdots
+\end{align}
+Thus,
+$$
+-a_n\sum_{i=1}^n z_i=a_{m-1},
+$$
+from which we get
+$$
+\sum_{i=1}^n z_i = -\frac{a_{n-1}}{a_n}.
+$$
+Proof of \@ref(eq:prodofroots): 
+$$
+p(0)=a_n(-1)^n \prod_{i=1}^n z_i=a_0,
+$$
+which implies
+$$
+\prod_{i=1}^n z_i = (-1)^n\frac{a_0}{a_n}.
+$$
+
+## Complex conjugate root theorem
+
+Let 
+$$
+p(z)=a_n z^n + a_{n-1}z^{n-1}+\cdots a_1 z +a_0,
+$$
+where the coefficients $a_n,\ a_{n-1},\ \ldots,\ a_1,\ a_0$ are all **real** numbers. If $\alpha$ is a root of $p(z)=0$, then its conjugate $\bar{\alpha}$ is also a root of $p(z)=0$.
+
+**Proof** Since $\alpha$ is a root of $p(z)=0$, we have
+\begin{equation}
+a_n\alpha^n + a_{n-1}\alpha^{n-1}+ \cdots + a_1\alpha +a_0=0.
+(\#eq:pairroots)
+\end{equation}
+Taking conjugate on both sides of \@ref(eq:pairroots) and noticing the coefficients are all real, we have
+$$
+a_n\bar{\alpha}^n + a_{n-1}\bar{\alpha}^{n-1}+ \cdots + a_1\bar{\alpha} +a_0=0,
+$$
+which completes the proof.
 
 # Other Stuff
 
