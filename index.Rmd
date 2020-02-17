@@ -744,7 +744,7 @@ p(z)=& a_n(z-z_1)(z-z_2)\cdots(z-z_n)\\
 \end{align}
 Thus,
 $$
--a_n\sum_{i=1}^n z_i=a_{m-1},
+-a_n\sum_{i=1}^n z_i=a_{n-1},
 $$
 from which we get
 $$
