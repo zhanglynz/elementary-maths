@@ -664,7 +664,7 @@ knitr::include_graphics("figures/circular-arc.PNG")
 
 # Complex Numbers
 
-**Acknowledgement:** When I wrote this chapter, I was inspired by Chapter 5 "Portent of the ideal world"" of *In Pursuit of the Unknown---17 Equations That Changed the World* written by Ian Stewart.
+**Acknowledgement:** When I wrote this chapter, I was inspired by Chapter 5 "Portent of the ideal world" of *In Pursuit of the Unknown---17 Equations That Changed the World* written by Ian Stewart.
 
 ## What are complex numbers
 
