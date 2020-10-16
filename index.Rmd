@@ -321,7 +321,7 @@ $$
 Next, we can easily find $C=24$. The final answer: $C=24$ and $R=42$.
 
 
-# Beautiful Geomtry
+# Beautiful Geometry
 
 ## Plane Geometry
 
@@ -468,7 +468,7 @@ then
 $$
 \frac{AB}{DE}=\frac{BC}{EF}=\frac{CA}{FD}.
 $$
-(It's said that the two angles are **similar**. See Figure \@ref(fig:similar-fig))
+(It's said that the two triangles are **similar**. See Figure \@ref(fig:similar-fig))
 
 **Proof:** Using the law of sines twice, we have
 $$
@@ -501,7 +501,7 @@ and the proof is completed.
 knitr::include_graphics("figures/similar_triangles.PNG")
 ```
 
-## Coordiante Geometry
+## Coordinate Geometry
 
 # Tricky Trigonometrics
 
@@ -826,7 +826,7 @@ which completes the proof.
 
 
 
-## Serious Inequlities
+## Serious Inequalities
 
 ### Average is Between the Min and Max
 
