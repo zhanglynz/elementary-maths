@@ -25,7 +25,7 @@
 <meta name="author" content="Lingyun Zhang">
 
 
-<meta name="date" content="2020-03-15">
+<meta name="date" content="2020-12-30">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -111,7 +111,11 @@
 <li class="chapter" data-level="5.2.2" data-path="other-stuff.html"><a href="other-stuff.html#cauchy-schwarz-inequality"><i class="fa fa-check"></i><b>5.2.2</b> Cauchy-Schwarz inequality</a></li>
 <li class="chapter" data-level="5.2.3" data-path="other-stuff.html"><a href="other-stuff.html#relations-among-four-means"><i class="fa fa-check"></i><b>5.2.3</b> Relations among four means</a></li>
 </ul></li>
-<li class="chapter" data-level="5.3" data-path="other-stuff.html"><a href="other-stuff.html#hard-combinatorics"><i class="fa fa-check"></i><b>5.3</b> Hard Combinatorics</a></li>
+<li class="chapter" data-level="5.3" data-path="other-stuff.html"><a href="other-stuff.html#hard-combinatorics"><i class="fa fa-check"></i><b>5.3</b> Hard Combinatorics</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="other-stuff.html"><a href="other-stuff.html#combination-and-permutation"><i class="fa fa-check"></i><b>5.3.1</b> Combination and permutation</a></li>
+<li class="chapter" data-level="5.3.2" data-path="other-stuff.html"><a href="other-stuff.html#permutation-number-p_nk"><i class="fa fa-check"></i><b>5.3.2</b> Permutation number <span class="math inline">\(P_n^k\)</span></a></li>
+<li class="chapter" data-level="5.3.3" data-path="other-stuff.html"><a href="other-stuff.html#combination-number-c_nk"><i class="fa fa-check"></i><b>5.3.3</b> Combination number <span class="math inline">\(C_n^k\)</span></a></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -240,14 +244,114 @@ f\left(\sum_{i=1}^n \lambda_i x_i\right) \le \sum_{i=1}^n \lambda_i f(x_i),
 \left(\frac{\sum_{i=1}^n x_i}{n}\right)^2\le \frac{\sum_{i=1}^n x_i^2}{n},
 \]</span> which can be simplified as <span class="math display">\[
 \left(\sum_{i=1}^n x_i\right)^2 \le n\sum_{i=1}^n x_i^2.
-\]</span> According to the Cauchy-Schwarz inequality, we have <span class="math display">\[
+\]</span></p>
+<p>According to the Cauchy-Schwarz inequality, we have <span class="math display">\[
 \left(\sum_{i=1}^n x_i\right)^2=\left(\sum_{i=1}^n x_i\cdot 1\right)^2\le \sum_{i=1}^n x_i^2\sum_{i=1}^n 1^2=n\sum_{i=1}^n x_i^2,
 \]</span> which completes the proof.</p>
 </div>
 </div>
 <div id="hard-combinatorics" class="section level2">
 <h2><span class="header-section-number">5.3</span> Hard Combinatorics</h2>
+<div id="combination-and-permutation" class="section level3">
+<h3><span class="header-section-number">5.3.1</span> Combination and permutation</h3>
+<p>We must distinguish two concepts, <em>combination</em> and <em>permutation</em>. In mathematics, a combination simply means <strong>a group</strong>—what matters is what members are in the group but not the order; whereas a permutation means a group—both membership and order matter. To be clear, let’s have an example.</p>
+<p><strong>Example:</strong> Let set <span class="math inline">\(\Omega=\{{\rm a, b, c, d}\}\)</span>. We select two different letters from <span class="math inline">\(\Omega\)</span>. List all the possible <em>combinations</em> and <em>permutations</em> from the selection.</p>
+<p><strong>Solution:</strong> The list of all the possible combinations is <span class="math display">\[
+\{{\rm ab, ac, ad, bc, bd, cd}\}.
+\]</span> This list has 6 members.</p>
+<p>The list of all the possible permutations is <span class="math display">\[
+\{{\rm ab, ba, ac, ca, ad, da, bc, cb, bd, db, cd, dc}\},
+\]</span> which has 12 members.</p>
+</div>
+<div id="permutation-number-p_nk" class="section level3">
+<h3><span class="header-section-number">5.3.2</span> Permutation number <span class="math inline">\(P_n^k\)</span></h3>
+<p><strong>Question 1:</strong> There are <span class="math inline">\(n\)</span> balls and each of them has a unique number from <span class="math inline">\(1\)</span> to <span class="math inline">\(n\)</span>. If we select <span class="math inline">\(k\)</span> (<span class="math inline">\(1\le k \le n\)</span>) different balls, how many permutations do we have?</p>
+<p><strong>Analysis:</strong> The above question is kind of abstract. Let’s look at a concrete example: We suppose <span class="math inline">\(n=4\)</span> and <span class="math inline">\(k=3\)</span>. We can select balls with three steps; in each step we select one ball and write down the number of the ball. A table, which shows the idea, is as follows.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Step 1</th>
+<th align="center">Step 2</th>
+<th align="center">Step 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1</td>
+<td align="center">12, 13, 14</td>
+<td align="center">123, 124, 132, 134, 142, 143</td>
+</tr>
+<tr class="even">
+<td align="center">2</td>
+<td align="center">21, 23, 24</td>
+<td align="center">213, 214, 231, 234, 241, 243</td>
+</tr>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">31, 32, 34</td>
+<td align="center">312, 314, 321, 324, 341, 342</td>
+</tr>
+<tr class="even">
+<td align="center">4</td>
+<td align="center">41, 42, 43</td>
+<td align="center">412, 413, 421, 423, 431, 432</td>
+</tr>
+</tbody>
+</table>
+<p>From the above table, we can find there are <span class="math display">\[4\times 3\times 2 = 24\ {\rm permutations}.\]</span></p>
+<strong>Answer to Question 1:</strong> Let <span class="math inline">\(P_n^k\)</span> be the permutation number that we want to find out. Based on the above analysis, we can figure out that
+<span class="math display">\[\begin{align}
+P_n^k&amp;=n\times (n-1)\times (n-2)\times \cdots \times (n-k+1)\\
+&amp;=\frac{(n-1)\times (n-2)\times \cdots \times (n-k+1)\times (n-k)\times \cdots \times 1}{(n-k)\times \cdots \times 1}\\
+&amp;=\frac{n!}{(n-k)!k!}
+\end{align}\]</span>
+<p><strong>Remark:</strong> <span class="math inline">\(i!\)</span>—read as <span class="math inline">\(i\)</span>-factorial—is a shorthand notation for the product <span class="math inline">\(1\times 2\times \cdots\times i\)</span>.</p>
+</div>
+<div id="combination-number-c_nk" class="section level3">
+<h3><span class="header-section-number">5.3.3</span> Combination number <span class="math inline">\(C_n^k\)</span></h3>
+<p><strong>Question 2:</strong> Same statement as that in <strong>Question 1</strong>, but we now ask: How many combinations do we have?</p>
+<p><strong>Analysis:</strong> Let’s again use the example in the <strong>Analysis</strong> for <strong>Question 1</strong>. The key is to find out how a combination is related to the permutations that contain the same members. For example, we have a combination <span class="math inline">\(123\)</span>; using the members in this combination, we can have all the permutations listed in the following table</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Step 1</th>
+<th align="center">Step 2</th>
+<th align="center">Step 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1</td>
+<td align="center">12, 13</td>
+<td align="center">123, 132</td>
+</tr>
+<tr class="even">
+<td align="center">2</td>
+<td align="center">21, 23</td>
+<td align="center">213, 231</td>
+</tr>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">31, 32</td>
+<td align="center">312, 321</td>
+</tr>
+</tbody>
+</table>
+<p>The above table tells us the combination <span class="math inline">\(123\)</span> corresponds to <span class="math display">\[
+3\times 2\times 1=3!=6\ {\rm permutations}.
+\]</span> So, for <span class="math inline">\(n=4\)</span> and <span class="math inline">\(k=3\)</span> we want to find the unknown combination number <span class="math inline">\(x\)</span>, we have the equation <span class="math display">\[
+3!x= 24,
+\]</span> from which we get <span class="math display">\[
+x=\frac{24}{3!}=4.
+\]</span></p>
+<p><strong>Answer to Question 2:</strong> Let <span class="math inline">\(C_n^k\)</span> be the combination number that we are seeking. Based on the analysis that we just did, we have <span class="math display">\[
+k!C_n^k=P_n^k,
+\]</span> from which we get <span class="math display">\[
+C_n^k=\frac{P_n^k}{k!}=\frac{n!}{(n-k)!k!}.
+\]</span></p>
+<p><strong>Remark:</strong> In textbooks, the combination number is often denoted by <span class="math inline">\(\binom{n}{k}.\)</span></p>
 
+</div>
 </div>
 </div>
             </section>
