@@ -1030,3 +1030,56 @@ $$
 
 **Remark:** In textbooks, the combination number is often denoted by $\binom{n}{k}.$
 
+### The binomial theorem
+
+For any positive integer $n$,
+\begin{equation}
+(a+b)^n = \sum_{k=0}^n C_n^k a^{n-k}b^k. (\#eq:binoTh)
+\end{equation}
+
+**Proof:** The key is the equation
+$$
+C_m^{k-1} + C_m^k=C_{m+1}^k,
+$$
+which can be easily proved. We use the mathematical induction method to prove \@ref(eq:binoTh). It's easy to show that when $n=1$ and $n=2$ Equation \@ref(eq:binoTh) holds. Suppose that for $n=m$ we have
+$$
+(a+b)^m = \sum_{k=0}^m C_m^k a^{m-k}b^k.
+$$
+It follow that
+\begin{align}
+(a+b)^{m+1}&=(a+b)(a+b)^m\\
+&=\sum_{k=0}^m C_m^k a^{m+1-k}b^k +\sum_{k=0}^m C_m^k a^{m-k}b^{k+1}\\
+&=a^{m+1}+\sum_{k=1}^m C_m^k a^{m+1-k}b^k + \sum_{j=1}^{m+1} C_m^{j-1}a^{m+1-j}b^j\\
+&=a^{m+1} +\sum_{k=1}^{m} (C_m^k + C_{m}^{k-1})a^{m+1-k}b^k + b^{m+1}\\
+&=\sum_{k=0}^{m+1}C_{m+1}^k a^{m+1-k}b^k,
+\end{align}
+which completes the proof.
+
+### Properties of $C_n^k$
+
+Recall that a) the combination number $C_n^k$ is the number of combinations when we select $k$ different items from $n$ items, and b)
+$$ 
+C_n^k = \frac{n!}{(n-k)!k!],\ {\rm for}\ k=0,\1,\ \ldots,\ n,
+$$
+where $0!=1$ by definition thus $C_n^0=1$.
+
+We now list some properties of $C_n^k$
+
+1) $C_n^k = C_n^{n-k}$
+
+2) $C_n^k + C_n^{k+1}=C_{n+1}^{k+1}$
+
+3) $\sum_{k=0}^n C_n^k = 2^n$
+
+4) $\sum_{k=0}^r C_n^k C_m^{r-k}=C_{n+m}^r$
+
+5) $\sum_{k=0}^n C_n^k C_n^{n-k}=\sum_{k=0}^n\left(C_n^k\right)^2=C_{2n}^n$
+
+**Proof:** The first two equations are easy to be proved. For the third equation, noticing that
+$$
+(1+x)^n = \sum_{k=0}^n C_n^k x^k,
+$$
+thus if we let $x$ be 1 then we have the desired result. For equation 4, we notice that the RHS is coefficient of $x^r$ in $(1+x)^{n+m}$, and the LHS is the coefficient of $x^r$ in $(1+x)^n(1+x)^m$. Thus, LHS=RHS. Equation 5 is special case of equation 4, that is when $n=m=r$.
+
+
+
