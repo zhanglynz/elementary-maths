@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="tricky-trigonometrics.html">
-<link rel="next" href="other-stuff.html">
+<link rel="prev" href="fun-algebra.html">
+<link rel="next" href="tricky-trigonometrics.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -136,100 +136,156 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="complex-numbers" class="section level1">
-<h1><span class="header-section-number">4</span> Complex Numbers</h1>
-<p><strong>Acknowledgement:</strong> When I wrote this chapter, I was inspired by Chapter 5 “Portent of the ideal world” of <em>In Pursuit of the Unknown—17 Equations That Changed the World</em> written by Ian Stewart.</p>
-<div id="what-are-complex-numbers" class="section level2">
-<h2><span class="header-section-number">4.1</span> What are complex numbers</h2>
-<p><em>Complex numbers</em> are the numbers in the 2-dimension space, i.e. the <em>plane</em>, and in contrast <em>real numbers</em> are the numbers in the 1-dimension space, i.e. the <em>number line</em>. We can use <strong>two</strong> real numbers to express a complex number. For example, <span class="math inline">\((0, 0)\)</span>, <span class="math inline">\((1, 1)\)</span>, <span class="math inline">\((2, 2)\)</span>, <span class="math inline">\((4, 0)\)</span>, <span class="math inline">\((-2, 0)\)</span>, <span class="math inline">\((-2, -1)\)</span>, these six complex numbers correspond to the six points shown in Figure <a href="complex-numbers.html#fig:complex-number-fig1">4.1</a>.</p>
-<div class="figure" style="text-align: center"><span id="fig:complex-number-fig1"></span>
-<img src="figures/complex_numbers_1.PNG" alt="Six points"  />
+<div id="beautiful-geometry" class="section level1">
+<h1><span class="header-section-number">2</span> Beautiful Geometry</h1>
+<div id="plane-geometry" class="section level2">
+<h2><span class="header-section-number">2.1</span> Plane Geometry</h2>
+<div id="sum-of-inner-angles-of-a-triangle" class="section level3 unnumbered">
+<h3>Sum of inner angles of a triangle</h3>
+<p>We all know that the sum of the three inner angles of a triangle is equal to <span class="math inline">\(180^{\circ}\)</span>, but why is this true? Below a simple proof answers the question.</p>
+<strong>Proof.</strong> Observing the Figure <a href="beautiful-geometry.html#fig:trifig">2.1</a> below, we have <span class="math display">\[
+\theta_1 + \theta_2 + \theta_3 = 360^{\circ},
+\]</span> and <span class="math display">\[
+(\theta_1 + \angle C) + (\theta_2 + \angle A) + (\theta_3 + \angle B) = 540^{\circ}.
+\]</span> Thus, it follows from the above two equations that <span class="math display">\[
+\angle A + \angle B + \angle C = 540^{\circ} - 360^{\circ}=180^{\circ}.
+\]</span> The proof is completed.
+<div class="figure" style="text-align: center"><span id="fig:trifig"></span>
+<img src="figures/triangl.PNG" alt="A triangle."  />
 <p class="caption">
-Figure 4.1: Six points
+Figure 2.1: A triangle.
 </p>
 </div>
-<p>Figure <a href="complex-numbers.html#fig:complex-number-fig2">4.2</a> shows the general idea of any a complex number <span class="math inline">\((x, y)\)</span>.</p>
-<div class="figure" style="text-align: center"><span id="fig:complex-number-fig2"></span>
-<img src="figures/complex_numbers_2.PNG" alt="General idea about a complex number"  />
+<p><strong>Exercise:</strong> Suppose that we set a complete turn is <span class="math inline">\(100^{\circ}\)</span> but not <span class="math inline">\(360^{\circ}\)</span> any more. Then, what is the sum of the inner angles of a triangle?</p>
+</div>
+<div id="the-pythagorean-theorem-tpt" class="section level3 unnumbered">
+<h3>The Pythagorean Theorem (TPT)</h3>
+<p><strong>TPT:</strong> For any a right triangle, let <span class="math inline">\(c\)</span> be the length of the hypotenuse (the longest side), let <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> be the lengths of the other two sides. It’s true that <span class="math display">\[
+a^2+b^2=c^2.
+\]</span></p>
+<p><strong>Remark:</strong> The book, <em>The Pythagorean Theorem</em>, written by Eli Maor, is all about the Theorem. According to this book, there are about 400 known proofs of the theorem. Below is an elegant proof and I like it the best.</p>
+<strong>Proof of TPT:</strong> The key is to construct the following diagram
+<div class="figure" style="text-align: center"><span id="fig:py-fig"></span>
+<img src="figures/pythagorean-fig.PNG" alt="Key diagram."  />
 <p class="caption">
-Figure 4.2: General idea about a complex number
+Figure 2.2: Key diagram.
 </p>
 </div>
-<p>After understanding what complex numbers are, immediately we can find the following facts:</p>
-<ul>
-<li>All the real numbers are complex numbers, or in other words, <span class="math inline">\(R\)</span> (the set of all the real numbers) is a subset of <span class="math inline">\(C\)</span> (the set of all the complex numbers).</li>
-<li>For any two complex numbers, say <span class="math inline">\(z_1=(x_1, y_1)\)</span> and <span class="math inline">\(z_2=(x_2, y_2)\)</span>, if any of them is not real, then we cannot compare them, i.e. we just cannot know if <span class="math inline">\(z_1&lt;z_2\)</span> or <span class="math inline">\(z_1&gt;z_2\)</span>.</li>
-</ul>
-</div>
-<div id="how-to-make-use-of-complex-numbers" class="section level2">
-<h2><span class="header-section-number">4.2</span> How to make use of complex numbers</h2>
-<p>Here we talk about the <span class="math inline">\(+\)</span> (addition), <span class="math inline">\(-\)</span> (subtraction), <span class="math inline">\(\times\)</span> (multiplication) and <span class="math inline">\(\div\)</span> (division) operations between two complex numbers.</p>
-<p>Given any two complex numbers, <span class="math inline">\(z_1=(x_1, y_1)\)</span> and <span class="math inline">\(z_2=(x_2, y_2)\)</span>:</p>
-<ul>
-<li><p><span class="math inline">\(z_1+z_2=(x_1, y_1)+(x_2, y_2)=(x_1+x_2, y_1+y_2)\)</span>;</p></li>
-<li><p><span class="math inline">\(z_1-z_2=(x_1, y_1)-(x_2, y_2)=(x_1-x_2, y_1-y_2)\)</span>;</p></li>
-<li><p><span class="math inline">\(z_1\times z_2=(x_1, y_1)\times (x_2, y_2)=(x_1x_2-y_1y_2, x_1y_2+x_2y_1)\)</span>;</p></li>
-<li><p><span class="math inline">\(\frac{z_1}{z_2}=\frac{(x_1, y_1)}{(x_2, y_2)}=\frac{(x_1, y_1)\times (x_2, -y_2)}{(x_2, y_2)\times (x_2, -y_2)}=\left(\frac{1}{x_2^2+y_2^2}, 0\right)\left[(x_1, y_1)\times (x_2, -y_2)\right]\)</span></p></li>
-</ul>
-</div>
-<div id="why-complex-numbers" class="section level2">
-<h2><span class="header-section-number">4.3</span> Why complex numbers</h2>
-<p>The equation <span class="math inline">\(x^2+1=0\)</span> has no solution. However, if we translate this equation into 2-D, we have <span class="math display">\[
-z^2 + (1, 0) = (0, 0),
-\]</span> and it has solutions as <span class="math inline">\(z=(0, 1)\)</span> or <span class="math inline">\(z=(0, -1)\)</span>. This is an obvious reason that we need complex numbers. Actually, it turns out complex numbers are so useful in studying waves (e.g. sound, light and electricity). If you study maths at a university, it is very likely you will learn Fourier analysis, where complex numbers are the fundamental building blocks.</p>
-</div>
-<div id="back-to-the-convention" class="section level2">
-<h2><span class="header-section-number">4.4</span> Back to the convention</h2>
-</div>
-<div id="the-fundamental-theorem-of-algebra" class="section level2">
-<h2><span class="header-section-number">4.5</span> The fundamental theorem of algebra</h2>
-<p>For any polynomial <span class="math display">\[
-p(z) = a_n z^n + a_{n-1}z^{n-1}+\cdots+a_1 z + a_o,
-\]</span> where <span class="math inline">\(a_{n},\ a_{n-1},\ \ldots,\ a_1,\ a_0\)</span> are complex numbers, <span class="math inline">\(n\)</span> is a positive integer and <span class="math inline">\(a_n\neq 0\)</span>, it can be shown that <span class="math display">\[
-p(z)=a_n(z-z_1)(z-z_2)\cdots (z-z_{n-1})(z-z_n).
-\]</span> So, <span class="math inline">\(p(z)=0\)</span> has <span class="math inline">\(n\)</span> roots. This is the so-called <strong>the fundamental theorem of algebra</strong>.</p>
-<p><strong>Remarks:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>The proof of the fundamental theorem of algebra is given in <em>complex analysis</em>, which is taught in universities.</p></li>
-<li>The sum of the <span class="math inline">\(n\)</span> roots
-<span class="math display" id="eq:sumofroots">\[\begin{equation}
-\sum_{i=1}^n z_i = -\frac{a_{n-1}}{a_n},
-\tag{4.1}
+So, we have the following equality: The area of the “big square” is the same as the area of the “four right triangles” plus the area of the “small square”. That is, <span class="math display">\[
+(a+b)^2 = 4(1/2)ab + c^2,
+\]</span> which implies
+<span class="math display" id="eq:pytha-eq">\[\begin{equation}
+a^2+b^2+2ab=2ab + c^2 \tag{2.1}
 \end{equation}\]</span>
-and the product of the <span class="math inline">\(n\)</span> roots
-<span class="math display" id="eq:prodofroots">\[\begin{equation}
-\prod_{i=1}^n z_i = (-1)^n\frac{a_0}{a_n}.
-\tag{4.2}
-\end{equation}\]</span>
-Proof of <a href="complex-numbers.html#eq:sumofroots">(4.1)</a>:
-<span class="math display">\[\begin{align}
-p(z)=&amp; a_n(z-z_1)(z-z_2)\cdots(z-z_n)\\
-=&amp;a_n z^n - a_n\sum_{i=1}^n z_i z^{n-1}+\cdots
-\end{align}\]</span>
-<p>Thus, <span class="math display">\[
--a_n\sum_{i=1}^n z_i=a_{n-1},
-\]</span> from which we get <span class="math display">\[
-\sum_{i=1}^n z_i = -\frac{a_{n-1}}{a_n}.
-\]</span> Proof of <a href="complex-numbers.html#eq:prodofroots">(4.2)</a>: <span class="math display">\[
-p(0)=a_n(-1)^n \prod_{i=1}^n z_i=a_0,
-\]</span> which implies <span class="math display">\[
-\prod_{i=1}^n z_i = (-1)^n\frac{a_0}{a_n}.
-\]</span></p></li>
-</ol>
+<p>Cancelling the term <span class="math inline">\(2ab\)</span> from the both sides of <a href="beautiful-geometry.html#eq:pytha-eq">(2.1)</a>, we get <span class="math display">\[
+a^2+b^2=c^2.
+\]</span></p>
 </div>
-<div id="complex-conjugate-root-theorem" class="section level2">
-<h2><span class="header-section-number">4.6</span> Complex conjugate root theorem</h2>
-<p>Let <span class="math display">\[
-p(z)=a_n z^n + a_{n-1}z^{n-1}+\cdots a_1 z +a_0,
-\]</span> where the coefficients <span class="math inline">\(a_n,\ a_{n-1},\ \ldots,\ a_1,\ a_0\)</span> are all <strong>real</strong> numbers. If <span class="math inline">\(\alpha\)</span> is a root of <span class="math inline">\(p(z)=0\)</span>, then its conjugate <span class="math inline">\(\bar{\alpha}\)</span> is also a root of <span class="math inline">\(p(z)=0\)</span>.</p>
-<strong>Proof</strong> Since <span class="math inline">\(\alpha\)</span> is a root of <span class="math inline">\(p(z)=0\)</span>, we have
-<span class="math display" id="eq:pairroots">\[\begin{equation}
-a_n\alpha^n + a_{n-1}\alpha^{n-1}+ \cdots + a_1\alpha +a_0=0.
-\tag{4.3}
+<div id="the-law-of-cosines" class="section level3 unnumbered">
+<h3>The law of cosines</h3>
+For any a triangle <span class="math inline">\(ABC\)</span>, it is true that
+<span class="math display" id="eq:cosine-eq">\[\begin{equation}
+c^2= a^2 + b^2 - 2ab\cos C, \tag{2.2}
 \end{equation}\]</span>
-<p>Taking conjugate on both sides of <a href="complex-numbers.html#eq:pairroots">(4.3)</a> and noticing the coefficients are all real, we have <span class="math display">\[
-a_n\bar{\alpha}^n + a_{n-1}\bar{\alpha}^{n-1}+ \cdots + a_1\bar{\alpha} +a_0=0,
-\]</span> which completes the proof.</p>
+<p>where <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> are the lengths of the sides that opposite to angles <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span>, respectively.</p>
+<p><strong>Proof:</strong> We distinguish three cases.</p>
+<p><strong>Case 1:</strong> <span class="math inline">\(C=90^{\circ}\)</span>. In this case, the right hand side of Equation <a href="beautiful-geometry.html#eq:cosine-eq">(2.2)</a> is <span class="math display">\[
+a^2 + b^2
+\]</span> which equals <span class="math inline">\(c^2\)</span>—the left hand side—according to The Pythagorean Theorem (TPT).</p>
+<strong>Case 2:</strong> <span class="math inline">\(C&gt;90^{\circ}\)</span>. In this case, we use Figure <a href="beautiful-geometry.html#fig:cosines-fig">2.3</a>, and we have <span class="math display">\[
+\begin{array}{lcl}
+c^2&amp; =&amp; h^2 + (b_1 + b)^2\ \ \ [\hbox{according to TPT}]\\
+&amp;=&amp;a^2 - b_1^2 + b_1^2 +2b_1b +b^2\ \ \ [\hbox{using TPT again}]\\
+&amp;=&amp;a^2 + b^2 + 2b_1b\\
+&amp;=&amp;a^2 + b^2 + 2a\cos(\angle BCD)b\\
+&amp;=&amp;a^2 + b^2 + 2a\cos(180^{\circ} - C)b\\
+&amp;=&amp;a^2 + b^2 - 2ab\cos C
+\end{array}
+\]</span>
+<div class="figure" style="text-align: center"><span id="fig:cosines-fig"></span>
+<img src="figures/law_of_cosines.PNG" alt="Figure for Case 2."  />
+<p class="caption">
+Figure 2.3: Figure for Case 2.
+</p>
+</div>
+<p><strong>Case 3:</strong> <span class="math inline">\(C&lt;90^{\circ}\)</span>. In this case, we use Figure <a href="beautiful-geometry.html#fig:cosines-case3-fig">2.4</a>, and we have <span class="math display">\[
+\begin{array}{lcl}
+c^2&amp;=&amp; h^2 + b_2^2\ \ \ [\hbox{according to TPT}]\\
+&amp;=&amp;a^2-b_1^2 + b_2^2\ \ \ [\hbox{using TPT again}]\\
+&amp;=&amp;a^2 + (b_1 +b_2)^2 - 2b_1b_2 - 2b_1^2\\
+&amp;=&amp;a^2 + b^2 - 2b_1(b_2+b_1)\\
+&amp;=&amp;a^2 + b^2 - 2b_1b\\
+&amp;=&amp;a^2 + b^2 - 2ab\cos C
+\end{array}
+\]</span></p>
+<div class="figure" style="text-align: center"><span id="fig:cosines-case3-fig"></span>
+<img src="figures/cosines_law_case3.PNG" alt="Figure for Case 3."  />
+<p class="caption">
+Figure 2.4: Figure for Case 3.
+</p>
+</div>
+</div>
+<div id="the-law-of-sines" class="section level3 unnumbered">
+<h3>The law of sines</h3>
+For any a triangle <span class="math inline">\(ABC\)</span>, it is true that
+<span class="math display" id="eq:sines-eq">\[\begin{equation}
+\frac{a}{\sin A} = \frac{b}{\sin B}=\frac{c}{\sin C}=\frac{abc}{2T} \tag{2.3}
+\end{equation}\]</span>
+<p>where <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> are the lengths of the sides that opposite to angles <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span>, respectively; <span class="math inline">\(T\)</span> is the area of the triangle.</p>
+<p><strong>Proof:</strong> This is easy if we have noticed that <span class="math display">\[
+T = \frac{1}{2}ab\sin C=\frac{1}{2} ac \sin B = \frac{1}{2} bc \sin A.
+\]</span></p>
+</div>
+<div id="herons-formula" class="section level3 unnumbered">
+<h3>Heron’s formula</h3>
+For any a triangle <span class="math inline">\(ABC\)</span> it is true that
+<span class="math display" id="eq:heron-eq">\[\begin{equation}
+T = \sqrt{s(s-a)(s-b)(s-c)}, \tag{2.4}
+\end{equation}\]</span>
+<p>where <span class="math inline">\(T\)</span> is the area, <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> are the lengths of the three sides (opposite to angles <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span>, respectively), <span class="math inline">\(s=(a+b+c)/2\)</span>.</p>
+<p><strong>Proof:</strong> Let <span class="math inline">\(RHS\)</span> be the Right-Hand-Side of Equation <a href="beautiful-geometry.html#eq:heron-eq">(2.4)</a>. <span class="math display">\[
+\begin{array}{lcl}
+RHS &amp;=&amp; \frac{1}{4}\sqrt{(a+b+c)(b+c-a)(a+c-b)(a+b-c)}\\
+&amp;=&amp; \frac{1}{4}\sqrt{[(b+c)^2-a^2][a^2-(c-b)^2]}\\
+&amp;=&amp; \frac{1}{4}\sqrt{(2bc+2bc\cos A)(2bc-2bc\cos A)}\ \ \ [\hbox{according to the law of cosines}]\\
+&amp;=&amp;\frac{1}{2}bc\sqrt{1-\cos^2A}\\
+&amp;=&amp;\frac{1}{2}bc\sin A\\
+&amp;=&amp;T
+\end{array}
+\]</span></p>
+</div>
+<div id="similarity-between-two-triangles" class="section level3 unnumbered">
+<h3>Similarity between two triangles</h3>
+<p>For any two triangles, say <span class="math inline">\(ABC\)</span> and <span class="math inline">\(DEF\)</span>, if <span class="math display">\[
+\angle A = \angle D, \ \angle B = \angle E,\ \hbox{and}\ \angle C = \angle F,
+\]</span> then <span class="math display">\[
+\frac{AB}{DE}=\frac{BC}{EF}=\frac{CA}{FD}.
+\]</span> (It’s said that the two triangles are <strong>similar</strong>. See Figure <a href="beautiful-geometry.html#fig:similar-fig">2.5</a>)</p>
+<strong>Proof:</strong> Using the law of sines twice, we have <span class="math display">\[
+\frac{AB}{\sin C}=\frac{BC}{\sin A},
+\]</span> and <span class="math display">\[
+\frac{DE}{\sin F}=\frac{EF}{\sin D}.
+\]</span> Next, doing “division”, we have
+<span class="math display" id="eq:similar-ratio">\[\begin{equation}
+\frac{\frac{AB}{\sin C}}{\frac{DE}{\sin F}}=\frac{\frac{BC}{\sin A}}{\frac{EF}{\sin D}}. \tag{2.5}
+\end{equation}\]</span>
+<p>Since <span class="math display">\[
+\angle C = \angle F\ \hbox{and}\ \angle A=\angle D,
+\]</span> Equation <a href="beautiful-geometry.html#eq:similar-ratio">(2.5)</a> can be simplified as <span class="math display">\[
+\frac{AB}{DE}=\frac{BC}{EF}.
+\]</span> In a similar manner, we can show that <span class="math display">\[
+\frac{AB}{DE}=\frac{CA}{FD},
+\]</span> and the proof is completed.</p>
+<div class="figure" style="text-align: center"><span id="fig:similar-fig"></span>
+<img src="figures/similar_triangles.PNG" alt="Two similar triangles"  />
+<p class="caption">
+Figure 2.5: Two similar triangles
+</p>
+</div>
+</div>
+</div>
+<div id="coordinate-geometry" class="section level2">
+<h2><span class="header-section-number">2.2</span> Coordinate Geometry</h2>
 </div>
 </div>
             </section>
@@ -237,8 +293,8 @@ a_n\bar{\alpha}^n + a_{n-1}\bar{\alpha}^{n-1}+ \cdots + a_1\bar{\alpha} +a_0=0,
           </div>
         </div>
       </div>
-<a href="tricky-trigonometrics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="other-stuff.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="fun-algebra.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tricky-trigonometrics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -989,7 +989,7 @@ $$4\times 3\times 2 = 24\ {\rm permutations}.$$
 \begin{align}
 P_n^k&=n\times (n-1)\times (n-2)\times \cdots \times (n-k+1)\\
 &=\frac{(n-1)\times (n-2)\times \cdots \times (n-k+1)\times (n-k)\times \cdots \times 1}{(n-k)\times \cdots \times 1}\\
-&=\frac{n!}{(n-k)!k!}
+&=\frac{n!}{(n-k)!}
 \end{align}
 
 **Remark:** $i!$---read as $i$-factorial---is a shorthand notation for the product $1\times 2\times \cdots\times i$.
