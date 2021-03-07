@@ -136,6 +136,7 @@ So, $x=9/9=1.$ The proof is completed.
 
   (a) Convert $0.\dot{1}$ to a fraction.
   (b) Covert $2.1\dot{2}\dot{3}$ to a fraction.
+  (c) What is $\sqrt{2\sqrt{2\sqrt{2\sqrt{\cdots}}}}$?
 
 ### The quadratic formula {-}
 
