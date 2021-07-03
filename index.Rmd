@@ -504,6 +504,12 @@ knitr::include_graphics("figures/similar_triangles.PNG")
 
 ## Coordinate Geometry
 
+Where do all the (real) numbers live? Answer: the number line. Where do all the (real uni-variate)  functions live? Answer: A plane, where the coordinate system is set up. The essential thing about coordinate geometry is to *use algebra to understand geometry*.
+
+### Linear relationship
+
+### Quadratic relationship
+
 # Tricky Trigonometrics
 
 ## Basic Facts About Right Triangles
