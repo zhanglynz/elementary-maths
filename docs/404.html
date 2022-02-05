@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Tricky Trigonometrics | The joy of elementary maths</title>
-  <meta name="description" content="3 Tricky Trigonometrics | The joy of elementary maths" />
+  <title>Page not found | The joy of elementary maths</title>
+  <meta name="description" content="Page not found | The joy of elementary maths" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3 Tricky Trigonometrics | The joy of elementary maths" />
+  <meta property="og:title" content="Page not found | The joy of elementary maths" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Tricky Trigonometrics | The joy of elementary maths" />
+  <meta name="twitter:title" content="Page not found | The joy of elementary maths" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="beautiful-geometry.html"/>
-<link rel="next" href="complex-numbers.html"/>
+
+
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -157,173 +157,19 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="tricky-trigonometrics" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Tricky Trigonometrics</h1>
-<div id="basic-facts-about-right-triangles" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Basic Facts About Right Triangles</h2>
-<ul>
-<li><p><strong>(F1)</strong> There are infinite right triangles.</p></li>
-<li><p><strong>(F2)</strong> Let <span class="math inline">\(ABC\)</span> be a right triangle and <span class="math inline">\(\angle C=90^\circ\)</span>. It is true that
-<span class="math display">\[
-\angle A + \angle B = 90^\circ.
-\]</span>
-That is to say, once we know a non-right angle (e.g. the smallest angle) in the right triangle, we then know all the three angles. To put this in another way: When we study a right triangle in terms of angles, we only need to pay attention to one of its non-right angle.</p></li>
-<li><p><strong>(F3)</strong> For any two right triangles, <span class="math inline">\(ABC\)</span> and <span class="math inline">\(DEF\)</span>, they are similar if and only if one non-right angle in <span class="math inline">\(ABC\)</span> is equal to an angle in <span class="math inline">\(DEF\)</span>.</p></li>
-</ul>
-</div>
-<div id="the-six-ratios" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> The Six Ratios</h2>
-<p>Take two right triangles <span class="math inline">\(ABC\)</span> and <span class="math inline">\(DEF\)</span> such that
-<span class="math display">\[
-\angle C= \angle F = 90^\circ\ \hbox{and}\ \angle A =\angle D = \theta,
-\]</span>
-where <span class="math inline">\(0^\circ &lt; \theta &lt; 90^\circ\)</span> and <span class="math inline">\(\theta\)</span> is fixed (e.g. <span class="math inline">\(\theta = 30^\circ\)</span>).</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:two-right-triangles-fig"></span>
-<img src="figures/two_right_triangles.PNG" alt="Two similar right triangles"  />
-<p class="caption">
-Figure 3.1: Two similar right triangles
-</p>
-</div>
-<p>According to <strong>(F3)</strong>, we know that <span class="math inline">\(ABC\)</span> and <span class="math inline">\(DEF\)</span> are similar. Thus, we have
-<span class="math display">\[
-\frac{BC}{EF}=\frac{AB}{DE}\Rightarrow \left\{
-\begin{array}{ccc}
-\frac{BC}{AB}&amp;=&amp;\frac{EF}{DE},\\
-\frac{AB}{BC}&amp;=&amp;\frac{DE}{EF};
-\end{array}
-\right.
-\]</span>
-<span class="math display">\[
-\frac{AC}{DF}=\frac{AB}{DE}\Rightarrow \left\{
-\begin{array}{ccc}
-\frac{AC}{AB}&amp;=&amp;\frac{DF}{DE},\\
-\frac{AB}{AC}&amp;=&amp;\frac{DE}{DF};
-\end{array}
-\right.
-\]</span>
-<span class="math display">\[
-\frac{AC}{DF}=\frac{BC}{EF}\Rightarrow \left\{
-\begin{array}{ccc}
-\frac{AC}{BC}&amp;=&amp;\frac{DF}{EF},\\
-\frac{BC}{AC}&amp;=&amp;\frac{EF}{DF}.
-\end{array}
-\right.
-\]</span></p>
-<p>Based on the above, we can draw the conclusion:
-The six ratios, <span class="math inline">\(\frac{BC}{AB}\)</span>, <span class="math inline">\(\frac{AB}{BC}\)</span>, <span class="math inline">\(\frac{AC}{AB}\)</span>, <span class="math inline">\(\frac{AB}{AC}\)</span>, <span class="math inline">\(\frac{BC}{AC}\)</span> and <span class="math inline">\(\frac{AC}{BC}\)</span> are determined by <span class="math inline">\(\theta\)</span>. At this point, for any <span class="math inline">\(0^\circ &lt; \theta &lt; 90^\circ\)</span>, we can make the following <strong>definitions</strong>:
-<span class="math display">\[
-\begin{array}{c}
-\sin \theta = \frac{BC}{AB},\ \ \csc \theta = \frac{AB}{BC}=\frac{1}{\sin \theta}\\
-\cos \theta = \frac{AC}{AB}.\ \ \sec \theta = \frac{AB}{AC}=\frac{1}{\cos \theta}\\
-\tan \theta = \frac{BC}{AC},\ \ \cot \theta = \frac{AC}{BC}=\frac{1}{\tan \theta},
-\end{array}
-\]</span></p>
-</div>
-<div id="extension" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Extension</h2>
-<p>So, for any <span class="math inline">\(0^\circ &lt; \theta &lt; 90^\circ\)</span>, we can define <span class="math inline">\(\sin \theta\)</span> (its reciprocal <span class="math inline">\(\csc \theta\)</span>), <span class="math inline">\(\cos \theta\)</span> (its reciprocal <span class="math inline">\(\sec \theta\)</span>), and <span class="math inline">\(\tan \theta\)</span> (its reciprocal <span class="math inline">\(\cot \theta\)</span>). Next, we extend the domain of <span class="math inline">\(\theta\)</span> outside <span class="math inline">\((0^\circ, 90^\circ)\)</span>, and we also allow <span class="math inline">\(\theta\)</span> to be negative. The key is to use <strong>circles</strong> and <strong>coordinates</strong>.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:trig-func-extension-fig"></span>
-<img src="figures/trig_extension.PNG" alt="Illustration"  />
-<p class="caption">
-Figure 3.2: Illustration
-</p>
-</div>
-<p>For any <span class="math inline">\(0^\circ \le \theta \le 360^\circ\)</span>, we draw <span class="math inline">\(OP\)</span> such that i) point <span class="math inline">\(P\)</span> is on the circle and ii) the angle from the <span class="math inline">\(x\)</span>-axis to <span class="math inline">\(OP\)</span> (<strong>anticlockwise</strong>) is <span class="math inline">\(\theta\)</span> (see the Figure <a href="tricky-trigonometrics.html#fig:trig-func-extension-fig">3.2</a>.) Then, we define
-<span class="math display">\[
-\begin{array}{ccl}
-\sin \theta &amp;=&amp;\frac{y}{\sqrt{x^2+y^2}}\\
-\cos \theta &amp;=&amp;\frac{x}{\sqrt{x^2+y^2}}\\
-\tan \theta &amp;=&amp; \frac{y}{x}\ \ (\hbox{provided}\ x\neq 0)
-\end{array}
-\]</span></p>
-<p>If point <span class="math inline">\(Q\)</span> is on the circle and the angle from the <span class="math inline">\(x\)</span>-axis to <span class="math inline">\(OQ\)</span> (<strong>clockwise</strong>) is <span class="math inline">\(-\theta\)</span>, then the coordinates of point <span class="math inline">\(Q\)</span> must be <span class="math inline">\((x, -y)\)</span>. Therefore, we have
-<span class="math display">\[
-\begin{array}{ccl}
-\sin(-\theta) &amp;=&amp; \frac{-y}{\sqrt{x^2 +(-y)^2}} = -\frac{y}{\sqrt{x^2 +y^2}}=-\sin\theta\\
-\cos(-\theta) &amp;=&amp; \frac{x}{\sqrt{x^2 +(-y)^2}} = \frac{x}{\sqrt{x^2 +y^2}}=\cos\theta\\
-\tan(-\theta) &amp;=&amp; \frac{-y}{x} = -\frac{y}{x}=-\tan\theta\\
-\end{array}
-\]</span></p>
-<p>Based on the above definition, we derive the following equations: For <span class="math inline">\(k=0,\ \pm 1,\ \pm 2, \ldots\)</span>
-<span class="math display">\[
-\begin{array}{ccl}
-\sin(k\cdot 360^\circ +\theta) &amp;=&amp; \sin\theta,\\
-\cos(k\cdot 360^\circ +\theta) &amp;=&amp; \cos\theta,\\
-\tan(k\cdot 360^\circ +\theta) &amp;=&amp; \tan\theta,\\
-\end{array}
-\]</span>
-since <span class="math inline">\(k\cdot 360^\circ+\theta\)</span> and <span class="math inline">\(\theta\)</span> correspond to the same point on the circle.</p>
-</div>
-<div id="radians" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Radians</h2>
-<p>For any a given circle, let <span class="math inline">\(C\)</span> and <span class="math inline">\(r\)</span> denote the circumference and radius, respectively. It has been <strong>discovered</strong> that
-<span class="math display">\[
-\frac{C}{r}=2\pi.
-\]</span>
-Thus,
-<span class="math display">\[
-\begin{array}{ccl}
-\frac{C/2}{r} &amp;=&amp; \pi,\\
-\frac{C/4}{r} &amp;=&amp; \frac{\pi}{2},\\
-\frac{C/8}{r} &amp;=&amp; \frac{\pi}{4}.
-\end{array}
-\]</span>
-Long long time ago, it was <strong>decided</strong> that</p>
-<ul>
-<li>full circle (or a complete turn) corresponds to <span class="math inline">\(360^\circ\)</span>,</li>
-<li>half circle corresponds to <span class="math inline">\(180^\circ\)</span>,</li>
-<li>a quarter circle corresponds to <span class="math inline">\(90^\circ\)</span>.</li>
-</ul>
-<p>So, we have the 1-to-1 correspondence
-<span class="math display">\[
-\begin{array}{ccl}
-360^\circ &amp;\longleftrightarrow&amp; 2\pi\\
-180^\circ &amp;\longleftrightarrow&amp; 1/2 \cdot 2\pi=\pi\\
-90^\circ &amp;\longleftrightarrow&amp; 1/4 \cdot 2\pi=\pi/2\\
-&amp;\cdots&amp;
-\end{array}
-\]</span>
-Based on the above, for any <span class="math inline">\(0^\circ\le \alpha\le 360^\circ\)</span>, we know that
-<span class="math display">\[
-\alpha^\circ \longleftrightarrow \frac{\alpha}{360}\cdot 2\pi.
-\]</span>
-The point here is that for any an angle it can be associated with two numbers, namely <span class="math inline">\(\alpha^\circ\)</span> and <span class="math inline">\(\frac{\alpha}{360}\cdot 2\pi\ \hbox{radians}\)</span>. Thus, we establish the following equation
-<span class="math display">\[
-\alpha^\circ = \frac{\alpha}{360}\cdot 2\pi\ \hbox{radians}
-\]</span>
-<strong>Remark:</strong> For simplicity reason, we often use “rad” rather than “radian”.</p>
-<p><strong>Summary points:</strong></p>
-<ul>
-<li><p>For any an angle, we can either use <strong>degrees</strong> or <strong>radians</strong> to measure it. For example
-<span class="math display">\[
-\begin{array}{c}
-\angle A = 60^\circ = \frac{60}{360}\cdot 2\pi\ \hbox{rad}=\frac{\pi}{3}\ \hbox{rad}\\
-\angle B = 150^\circ = \frac{150}{360}\cdot 2\pi\ \hbox{rad}=\frac{5\pi}{6}\ \hbox{rad}\\
-\angle C = 1\ \hbox{rad}=\frac{1}{2\pi}\cdot 360^\circ\approx 57,3^\circ\\
-\angle D = 2.5\ \hbox{rad}=\frac{2.5}{2\pi}\cdot 360^\circ\approx 143.2^\circ
-\end{array}
-\]</span></p></li>
-<li><p>It can be shown that the length of circular arc (see Figure <a href="tricky-trigonometrics.html#fig:radian-fig">3.3</a>) is
-<span class="math display">\[
-l = r\theta.
-\]</span>
-(Proof: Since <span class="math inline">\(\frac{l}{C}=\frac{\theta}{2\pi}\)</span>, <span class="math inline">\(\frac{l}{\theta}=\frac{C}{2\pi}=r\)</span>, which implies that <span class="math inline">\(l=r\theta.\)</span>)</p></li>
-</ul>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:radian-fig"></span>
-<img src="figures/circular-arc.PNG" alt="Illustration"  />
-<p class="caption">
-Figure 3.3: Illustration
-</p>
-</div>
-</div>
+<div id="page-not-found" class="section level1">
+<h1>Page not found</h1>
+<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
+<p>You may want to try searching to find the page's new location, or use
+the table of contents to find the page you are looking for.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="beautiful-geometry.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="complex-numbers.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
