@@ -502,6 +502,11 @@ and the proof is completed.
 knitr::include_graphics("figures/similar_triangles.PNG")
 ```
 
+
+### A reference book {-}
+
+David Acheson's book, *The Wonder Book of Geometry*, is an excellent source for learning about plane geometry.
+
 ## Coordinate Geometry
 
 Where do all the (real) numbers live? Answer: the number line. Where do all the (real uni-variate)  functions live? Answer: A plane, where the coordinate system is set up. The essential thing about coordinate geometry is to *use algebra to understand geometry*.
